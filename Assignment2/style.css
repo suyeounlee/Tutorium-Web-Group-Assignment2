@@ -43,13 +43,7 @@ body {
 }
 
 
-.search {
-    /* search box */
-    display: inline;
-    float: right;
-    padding-right: 20px;
 
-}
 
 .menu_wrap {
     /* About us, tutors, contact ... */
@@ -91,34 +85,42 @@ body {
     color: beige;
 }
 
-.menu_wrap .dep1 > li {
-        
+.menu_wrap .dep1>li {
+
     vertical-align: top;
 
 }
 
-.menu_wrap .dep1 > li:hover > .dep2 {
-   display:block;
+.menu_wrap .dep1>li:hover>.dep2 {
+    display: block;
 
 }
 
+.menu_wrap .dep1>li:hover>a {
+    background-color: orange;
+    color: blue;
+}
 
 .menu_wrap .dep2 {
     display: none;
     list-style: none;
     background-color: rgb(202, 202, 163);
     opacity: 0.7;
-   
-  
+
+
 }
 
-.menu_wrap .dep2 > li {
+.menu_wrap .dep2>li {
     text-align: center;
 }
 
-.menu_wrap .dep2 > li > a {
-  padding-left: 40px;
-  font: 10px;
+.menu_wrap .dep2>li>a {
+    padding-left: 40px;
+    font: 10px;
+}
+
+.menu_wrap .dep2>li>a:hover {
+    text-decoration: underline;
 }
 
 
@@ -150,44 +152,47 @@ input[type="button"] {
     line-height: 40px;
     text-align: center;
     font-size: 20px;
-  
+
 }
 
-.flexbox-container-siteMap a{
+.flexbox-container-siteMap a {
     color: black;
 }
 
 
 
-.flexbox-container-footer { /* footer */
-   
+.flexbox-container-footer {
+    /* footer */
+
     margin-bottom: 0px;
     display: flex;
     text-align: left;
     font-size: 18px;
-    width:100%;
+    width: 100%;
     font-family: sans-serif;
     background-color: rgb(246, 246, 240);
     line-height: 30px;
-    
+
 
 }
 
-.flexbox-footer1 { /* footer - Tutorium */
-    
+.flexbox-footer1 {
+    /* footer - Tutorium */
+
     padding-top: 20px;
     margin-left: 60px;
     width: 110px;
     font-size: 30px;
-    
+
 }
 
-.flexbox-footer1  a { 
-    text-decoration:none;
+.flexbox-footer1 a {
+    text-decoration: none;
     color: black;
 }
 
-.flexbox-footer2 { /* footer-locationn */
+.flexbox-footer2 {
+    /* footer-locationn */
     margin-left: 350px;
     font-size: 18px;
     word-spacing: 2px;
@@ -198,35 +203,38 @@ input[type="button"] {
 
 /* CSS for tutor list (Suyeon)*/
 
+.search {
+    /* search box */
+    display: inline;
+    float: left;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 10px;
 
-.gridbox-container-tutor { /* by subject, by location */
-    margin-top: 70px;
+}
+
+.flexbox-container-tutor{
+    margin-top: 100px;
     margin-bottom: 40px;
     display:grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-evenly;
-    
-   
-}
-
-.gridbox-tutorBox1 > table { /* by subject, by location */
-    margin-left: 40px;
-    width: 250px;
-    height: 200px;
-    border: 2px solid lightgrey;
+    row-gap: 50px;
+    column-gap: 0px;
     text-align: center;
-    font-size: 20px;
-    /* position:  */
 }
 
-table td, tr { /* by subject, by location */
-    border-top: thin solid rgb(232, 232, 205);
-    border-bottom: thin-solid rgb(232, 232, 205);
+.flexbox-item1 {
+ /* border: 1px solid black; */
+
 }
 
-.gridbox-tutorBox2{ /* tutor list */
-    border: 1px solid black;
+.flexbox-container-tutor img {
+    width: 250px;
+    height: 250px;
+  
 }
+
 
 
 <<<<<<< HEAD
