@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: rgba(255, 240, 242, 0);
+        }
+
+        /* Main Page */
+
+        .headNav {
+            /*Login and Sign-in */
+            margin-top: 0px;
+            text-align: right;
+            font-size: 18px;
+
+        }
+
+        .headNav>a {
+            /* a tag for Login and Sign-in  */
+            text-decoration: none;
+            color: rgb(35, 35, 95);
+            letter-spacing: 3px;
+            padding-right: 30px;
+            text-align: center;
+        }
+
+        #topHeader {
+            /* Tutorium */
+            padding-top: 50px;
+            margin-bottom: 0px;
+            padding-left: 30px;
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            background-color: rgb(246, 246, 240);
+            font-weight: bold;
+            font-size: 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        #topHeader>a {
+            text-decoration: none;
+            color: black;
+
+        }
+
+
+        .search {
+            /* search box */
+            display: inline;
+            float: right;
+            padding-right: 20px;
+
+        }
+
+        .menu_wrap {
+            /* About us, tutors, contact ... */
+            margin-top: 1px;
+            padding-top: 0px;
+            width: 100%;
+            height: 40px;
+            background-color: rgb(202, 202, 163);
+            text-align: center;
+            font-size: 28px;
+
+
+        }
+
+        .menu_wrap a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 22px;
+            padding-inline: 80px;
+
+        }
+
+        .menu_wrap>ul>li {
+            list-style: none;
+            display: inline-block;
+
+        }
+
+        .dep1 {
+            margin-top: 5px;
+            padding-top: 4px;
+        }
+
+
+
+        .menu_wrap a:hover {
+            color: beige;
+        }
+
+
+        .flexbox-container {
+            margin-top: 80px;
+            margin-bottom: 80px;
+            display: flex;
+            text-align: center;
+            justify-content: space-around;
+            font-size: 28px;
+        }
+
+        img {
+            width: 300px;
+            height: 400px;
+        }
+
+        .menu_wrap .dep1 > li {
+        
+            vertical-align: top;
+
+        }
+
+        .menu_wrap .dep1 > li:hover > .dep2 {
+           display:block;
+
+        }
+        
+
+        .menu_wrap .dep2 {
+            display: none;
+            list-style: none;
+            background-color: rgb(202, 202, 163);
+            opacity: 0.7;
+           
+          
+        }
+
+        .menu_wrap .dep2 > li {
+            text-align: center;
+        }
+
+        .menu_wrap .dep2 > li > a {
+          padding-left: 40px;
+          font: 10px;
+        }
+    
+
+        /*  */  
+    </style>
+
+    <title>Tutorium</title>
+</head>
+
+<body>
+
+    <nav class="headNav">
+        <div class="search">
+            <input type="text" id="searchBox" placeholder="Search">
+            <button id="searchButton">Click</button>
+        </div>
+        <a href="">Login</a>
+        <a href="">Sign-up</a>
+
+    </nav>
+
+    <hr>
+
+    <header id="topHeader">
+        <a href="#">Tutorium</a>
+    </header>
+
+    <nav class="menu_wrap">
+        <ul class="dep1">
+            <li>
+                <a href="#">Home</a>
+                <ul class="dep2">
+                    <li><a href=#"">Test</a></li>
+                    <li><a href=#"">Test</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="">About us </a>
+            <ul class="dep2">
+                <li><a href="">Location</a></li>
+            </ul>
+         </li>
+
+         <li>
+            <a href="">Subjects</a>
+            <ul class="dep2">
+                <li><a href="#">Programming</a></li>
+                <li><a href="#">????</a></li>
+            </ul>
+         </li>
+
+         <li>
+            <a href="findTutors.html">Find Tutors</a>
+            <ul class="dep2">
+                <li><a href="#">by location</a></li>
+                <li><a href="#">by subject</a></li>
+            </ul>
+         </li>
+
+         <li>
+            <a href="contact.html">Contact</a>
+            <ul class="dep2">
+                <li><a href="#">Q&A</a></li>
+            </ul>
+         </li>
+        </ul>
+
+    </nav>
+
+    <!-- <a href="#">Home</a>
+    <a href="aboutUs.html">About us</a>
+    <a href="">Subjects</a>
+    <a href="findTutors.html">Find tutors</a>
+    <a href="contact.html">Contact</a>
+
+  -->
+
+    <div class="flexbox-container">
+        <div class="flexbox-item-1">
+            <img src="images/Dinner.jpg">
+            <p>In-Person Tutoring</p>
+        </div>
+        <div class="flexbox-item-2">
+            <img src="images/Web1.PNG">
+            <p>Online Tutoring</p>
+        </div>
+        <div class="flexbox-item-3">
+            <img src="images/Math.PNG">
+            <p>Sutdy Group</p>
+
+        </div>
+
+    </div>
+
+    <!-- Site Map show/ hide button (Testing)  -->
+
+    <input type="button" value="Hide Sitemap">
+    <br>
+
+
+    <div class="flexbox-container-siteMap">
+
+        <div class="">
+
+        </div>
+
+        <div class="flexbox-siteMap1">
+            <strong><a href=aboutUs.html>About us</a></strong> <br>
+            Location
+        </div>
+        <div class="flexbox-siteMap2">
+            <strong> Subject </strong> <br>
+            Java <br>
+            Javascript <br>
+        </div>
+        <div class="flexbox-siteMap3">
+            <strong> <a href=findTutors.html>Find Tutors </a> </strong> <br>
+            by Subject <br>
+            by location <br>
+        </div>
+        <div class="flexbox-siteMap4">
+            <strong> <a href=contact.html> Contact </a></strong> <br>
+            Q&A
+        </div>
+
+        <div class="">
+
+        </div>
+
+    </div>
+
+
+
+    <div class="flexbox-container-footer">
+        <div class="flexbox-footer1">
+            <p><a href="#"> Tutorium </a></p>
+        </div>
+
+
+        <div class="flexbox-footer2">
+            <p> Tutorium | 1385 Woodroffe Ave, Nepean, ON <br>
+                CST8285-Web-Programming Group Assignment (Algonquin College) <br>
+
+                &copy; 2022 Copyright Juho | Leonardo | Mathunan | Su Yeoun <br>
+            </p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
