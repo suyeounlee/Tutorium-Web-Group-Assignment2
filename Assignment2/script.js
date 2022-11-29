@@ -25,32 +25,25 @@ function searchName() {
     const tutorBox = document.querySelectorAll(".tutorBox");
     const tName = document.getElementsByTagName("h3");
 
-    for(var i=0; i<tName.length; i++) {
+    for (var i = 0; i < tName.length; i++) {
         let match = tutorBox[i].getElementsByTagName('h3')[0];
 
-        if(match) {
+        if (match) {
             let textValue = match.textContent || match.innerHTML
-            
-            if(textValue.toLowerCase().includes(searchBox)) {
-                tutorBox[i].style.display="";
+
+            if (textValue.toLowerCase().includes(searchBox)) {
+                tutorBox[i].style.display = "";
             } else {
-                tutorBox[i].style.display="none";
+                tutorBox[i].style.display = "none";
             }
         }
-    } //for
-
-
-   
-   
-   
+    } //for   
 }; //searchName
 
 
- 
+
 const selectId = document.getElementById("findOption").value;
 const optionList = document.querySelectorAll(".option");
-
-
 
 function getSelectValue() {
 
@@ -59,40 +52,36 @@ function getSelectValue() {
     const subject = document.querySelectorAll(".subject");
     //console.log(subject);
 
-    if(selectedValue === 'subject') {
+    if (selectedValue === 'subject') {
         console.log('subject clicked');
 
         searchBox1.addEventListener("keyup", searchSubject);
-      
+
         function searchSubject() {
             console.log('function searchSubject working?');
 
             const tutorBox = document.querySelectorAll(".tutorBox");
             const searchBox = document.getElementById("searchBox").value.toLowerCase();
 
-            for(var i=0; i<subject.length; i++) {
+            for (var i = 0; i < subject.length; i++) {
                 let match = tutorBox[i].querySelector('.subject');
-                if(match) {
+                if (match) {
                     let textValue = match.textContent || match.innerHTML
-                    
-                    if(textValue.toLowerCase().includes(searchBox)) {
-                        tutorBox[i].style.display="";
+
+                    if (textValue.toLowerCase().includes(searchBox)) {
+                        tutorBox[i].style.display = "";
                     } else {
-                        tutorBox[i].style.display="none";
+                        tutorBox[i].style.display = "none";
                     }
                 }
             } //for
         }
     }
 
+    // if the select option changes from subject to name
+    if (selectedValue === 'name') {
+        window.location.reload();
+        searchBox1.addEventListener("keyup", searchName);
+        searchName();
+    }
 } //getSelectValue
-
-
-
-
-
-
-
-
-
-
