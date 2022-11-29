@@ -215,17 +215,14 @@ input[type="button"] {
 }
 
 /* paragraph in the container  */
-.paragraph {
+.paragraph, p {
     position: relative;
     margin-top: 25px;
 }
+
 
 /* for the bold text in second container  */
 span {
     font-weight: bold;
 }
 
-/* for the font for whole pages */
-#all {
-    font-family: 'Times New Roman', Times, serif;
-}
