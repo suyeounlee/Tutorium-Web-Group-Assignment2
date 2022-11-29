@@ -60,7 +60,7 @@
     </nav>
 
     <div class="search">
-        <select id="findOption">
+        <select id="findOption" onchange="getSelectValue();">
             <option class="option" value="name">Name</option>
             <option class= "option" value="subject">Subject</option>
         </select>
@@ -74,7 +74,7 @@
         <div class="tutorBox">
             <img src="images/Web1.PNG">
             <h3>Suyeon Lee</h3>
-            <p class="subject">Subject: Java</p>
+            <p class="subject" value="Java">Subject: Java</p>
             <p>Location: Nepean</p>
             <p>Email: lee0000@algonquin.com</p>
 
