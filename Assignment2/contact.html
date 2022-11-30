@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="contact.css">
+    <script src="contact.js" defer></script>
     <title>Contact</title>
 </head>
 <body>
@@ -68,26 +69,25 @@
                 <h2>Contact Us</h2>
             </div>
             <div class="container-form">
-                <form action="" method="post" accept-charset="UTF-8" novalidate autocomplete="on" name="contact-form">
+                <form id="questions" action="contact.php" method="post" accept-charset="UTF-8" name="contact-form" onsubmit="return validate();">
                     <div class="div-form">
                         Please complete the form below. Submissions will be responded to within 48 hours. For urgent matters, please contact our office via phone on 613-111-111.
                     </div>
                     <div class="div-form" >
                         <label id="firstName-label" for="firstName" >First Name <span class="form-span" title="This field is required.">*</span></label>
-                        <input class="div-form-input" type="text" id="firstName-input" name="firstName" value size="30" maxlength="50" placeholder="Enter your first name" required>    
+                        <input class="div-form-input" type="text" id="firstName-input" name="firstName" value size="30" maxlength="50" placeholder="Enter your first name" >    
                     </div>
                     <div class="div-form">
                         <label id="lastName-label" for="lastName" >Last Name <span class="form-span" title="This field is required.">*</span></label>
-                        <input class="div-form-input" type="text" id="lastName-input" name="lastName" value size="30" maxlength="50" placeholder="Enter your last name">
-
+                        <input class="div-form-input" type="text" id="lastName-input" name="lastName" value size="30" maxlength="50" placeholder="Enter your last name" >
                     </div>
                     <div class="div-form">
-                        <label id="" for="" >Email Address <span class="form-span" title="This field is required.">*</span></label>
-                        <input class="div-form-input" type="email" id="" name="" placeholder="Enter your email">    
+                        <label id="" for="email" >Email Address <span class="form-span" title="This field is required.">*</span></label>
+                        <input class="div-form-input" type="email" id="email" name="email" placeholder="Enter your email" >
                     </div>    
                     <div class="div-form">
                         <label id="" for="" >What course tutoring are you interested on? <span class="form-span" title="This field is required.">*</span></label>
-                        <select class="div-form-select" name="" id="" required>
+                        <select class="div-form-select" name="interest" id="interest" >
                             <option value="none">- Select a value -</option>
                             <option value="0">Object Orienting Programming</option>
                             <option value="1">Linux</option>
@@ -98,10 +98,11 @@
                     </div>
                     <div class="div-form">
                         <label id="" for="" >Message <span class="form-span" title="This field is required.">*</span></label>
-                        <textarea class="div-form-textarea" name="" id="" cols="40" rows="5" placeholder="Enter your enquiry" required></textarea>
+                        <textarea class="div-form-textarea" name="message" id="message" cols="40" rows="5" placeholder="Enter your enquiry" ></textarea>
                     </div>
-                    <div>
-                        <input id="div-form-submit" type="submit" id="" name="" value="Submit">                           
+                    <div id="button-container">
+                        <button id="div-form-submit" type="submit">Submit</button>
+                        <button id="div-form-reset" type="reset">Reset</button>                           
                     </div>
                 </form>
             </div>
