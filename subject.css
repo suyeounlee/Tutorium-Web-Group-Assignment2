@@ -1,9 +1,9 @@
-body{
+body {
     background-image: url(CourseBG.png);
-    background-size:cover;
+    background-size: cover;
 }
 
-.top{
+.top {
     background-image: url(Untitled-3.png);
     background-color: #f1f1f1;
     background-repeat: no-repeat;
@@ -16,41 +16,40 @@ body{
     border-style: outset;
 
 }
-  
-.section{
-    padding: 0;
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-}
+
+
 
 .container {
     position: relative;
-    width: 1750px;
+    width: 5000px;
+    height: 100%;
     display: flex;
+    margin-left: 200px;
     flex-wrap: wrap;
     transform-style: preserve-3d;
     perspective: 500px;
     width: auto;
     overflow: hidden;
-  }
+}
 
-  .box {
+.box {
     float: left;
     position: relative;
     color: #ffffff;
-    width: 225px;
-    height: 225px;
+    width: 375px;
+    height: 350px;
     text-align: center;
     background: #000;
     transition: 00.5s;
     transform-style: preserve-3d;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.755);
     border-style: outset;
-    margin: 2px;
-    display: none;/* Hidden by default */
-  }
+    margin: 5px;
+    display: none;
+    /* Hidden by default */
+}
 
- /* .container .box{
+/* .container .box{
     float: left;
     position: relative;
     width: 225px;
@@ -64,71 +63,79 @@ body{
     border-style: outset;
     
    
-}  */
+}  
   
   /* The "show" class is added to the filtered elements */
-  .show {
+.show {
     display: block;
-  }
-  
-  /* Style the buttons */
-  .btn {
+}
+
+/* Style the buttons */
+.btn {
     border: none;
     outline: none;
     padding: 12px 16px;
     background-color: #f1f1f1;
     cursor: pointer;
-  }
-  
-  /* Add a light grey background on mouse-over */
-  .btn:hover {
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
     background-color: #ddd;
-  }
-  
-  /* Add a dark background to the active button */
-  .btn.active {
+}
+
+/* Add a dark background to the active button */
+.btn.active {
     background-color: #666;
     color: white;
-  }
+}
 
-  /* .container:hover .box{
+/* .container:hover .box {
     transform: rotateY(25deg);
-    
+
 }
 
-.container .box:hover ~ .box{
+.container .box:hover~.box {
     transform: rotateY(-25deg);
-    
+
 }
 
-.container .box:hover{
+.container .box:hover {
     transform: rotateY(0deg);
-    
+
 } */
 
-.container .box .imgbox{
+.container .box .imgbox {
     position: absolute;
     top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
     height: 100%;
 }
 
-.container .box:hover .imgbox{
+.container .box:hover .imgbox {
     opacity: 0.4;
 }
 
-.container .box .imgbox{
+header h2 {
+    background-color: #fad02c;
+    color: #ffffff;
+}
+
+.container .box .imgbox img {
     position: absolute;
     top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
-.container .box:hover .imgbox{
-    opacity: 0.4;
-}
 
-.container .box .content{
+.container .box .content {
     position: absolute;
     top: 0;
     left: 0;
@@ -142,7 +149,7 @@ body{
 
 }
 
-.container .box .content h4{
+.container .box .content h4 {
     color: white;
     transition: 000.5s;
     text-transform: uppercase;
@@ -151,19 +158,19 @@ body{
     transform: translateY(200px);
 }
 
-.container .box:hover .content h4{
+.container .box:hover .content h4 {
     transform: translateY(0px);
     transition-delay: 0.5s;
 }
 
-.container .box .content p{
+.container .box .content p {
     color: #fff;
     transition: 000.5s;
     font-size: 20px;
     transform: translateY(220px);
 }
 
-.container .box:hover .content p{
+.container .box:hover .content p {
     transform: translateY(0px);
     transition-delay: 0.6s;
 }
