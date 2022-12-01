@@ -9,26 +9,16 @@
     <script src="script.js" defer></script>
 
     <title>Tutorium</title>
-</head>
-
+</head> 
+ 
 <body>
+    
 
     <nav class="headNav">
-
-        <a href="login.html">Login | Sign-up</a>
-        <!-- <a href="">Sign-up</a> -->
-    </nav>
-
-    <hr>
-
-    <header id="topHeader">
-        <a href="#">Tutorium</a>
-    </header>
-
-    <nav class="menu_wrap">
+        <nav class="menu_wrap">
         <ul class="dep1">
             <li>
-                <a href="#">Home</a>
+                <a href="index.html">Home</a>
             </li>
 
             <li>
@@ -53,22 +43,34 @@
             </ul>
          </li>
         </ul>
-
     </nav>
 
+        <a href="login.html">Login | Sign-up</a>
+    </nav>
+
+    <hr>
+
+    <header id="topHeader">
+        <a href="index.html">Tutorium</a>
+    </header>
+
+
+       
+
+    
 
 
     <div class="flexbox-container">
         <div class="flexbox-item-1">
-            <img src="images/Dinner.jpg">
+            <img src="./Images/inperson.jpg">
             <p>In-Person Tutoring</p>
         </div>
         <div class="flexbox-item-2">
-            <img src="images/Web1.PNG">
+            <img src="./Images/onlinetutoring.jpg">
             <p>Online Tutoring</p>
         </div>
         <div class="flexbox-item-3">
-            <img src="images/Math.PNG">
+            <img src="./Images/studygroup.jpg">
             <p>Sutdy Group</p>
 
         </div>
@@ -130,20 +132,6 @@
 
         </div>
   
-        <script>
-            const button = document.querySelector("#site");
-const site = document.querySelector(".flexbox-container-siteMap");
-
-button.addEventListener('click', ()=> {
-    if(site.style.display === 'none') {
-        site.style.display = 'flex';
-        button.value = 'Hide Sitemap';
-    } else{
-        site.style.display = 'none';
-        button.value = 'Show Sitemap'
-    }
-});
-        </script>
 </body>
 
 </html>

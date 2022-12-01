@@ -134,8 +134,9 @@ body {
 }
 
 img {
-    width: 300px;
+    width: 400px;
     height: 400px;
+    object-fit:cover;
 }
 
 input[type="button"] {

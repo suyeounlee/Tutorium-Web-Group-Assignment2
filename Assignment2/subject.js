@@ -19,7 +19,7 @@ function w3AddClass(element, name) {
     if (arr1.indexOf(arr2[i]) == -1) {
       element.className += " " + arr2[i];
     }
-  }
+  }  
 }
 
 // Hide elements that are not selected
