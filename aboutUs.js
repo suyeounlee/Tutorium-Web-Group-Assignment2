@@ -10,4 +10,4 @@ button.addEventListener('click', ()=> {
         site.style.display = 'none';
         button.value = 'Show Sitemap'
     }
-}); 
+});  
