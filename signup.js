@@ -10,7 +10,11 @@ form.addEventListener('submit', e => {
 	
 	checkInputs();
 });
+<<<<<<< HEAD
 
+=======
+   
+>>>>>>> 7512b8b5633ffa42b0831851d13f7dca0efa0d39
 function checkInputs() {
 	// trim to remove the whitespaces
 	const emailValue = email.value.trim();

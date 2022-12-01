@@ -17,6 +17,7 @@ body{
 
 }
 
+<<<<<<< HEAD
 .section{
     padding: 0;
     margin: 0;
@@ -27,11 +28,22 @@ body{
     position: relative;
     width: 1750px;
     display: flex;
+=======
+
+
+.container {
+    position: relative;
+    width: 5000px;
+    height: 100%;
+    display: flex;
+    margin-left: 200px;
+>>>>>>> 7512b8b5633ffa42b0831851d13f7dca0efa0d39
     flex-wrap: wrap;
     transform-style: preserve-3d;
     perspective: 500px;
     width: auto;
     overflow: hidden;
+<<<<<<< HEAD
   }
 
   .box {
@@ -40,17 +52,36 @@ body{
     color: #ffffff;
     width: 225px;
     height: 225px;
+=======
+}
+
+.box {
+    float: left;
+    position: relative;
+    color: #ffffff;
+    width: 375px;
+    height: 350px;
+>>>>>>> 7512b8b5633ffa42b0831851d13f7dca0efa0d39
     text-align: center;
     background: #000;
     transition: 00.5s;
     transform-style: preserve-3d;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.755);
     border-style: outset;
+<<<<<<< HEAD
     margin: 2px;
     display: none;/* Hidden by default */
   }
 
  /* .container .box{
+=======
+    margin: 5px;
+    display: none;
+    /* Hidden by default */
+}
+
+/* .container .box{
+>>>>>>> 7512b8b5633ffa42b0831851d13f7dca0efa0d39
     float: left;
     position: relative;
     width: 225px;
