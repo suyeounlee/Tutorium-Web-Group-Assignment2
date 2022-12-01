@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@400;600;700&display=swap");
+
+body {
+    background-color: rgba(255, 240, 242, 0);
+    width: 100%;
+}
+
+/* Main Page */
+  
+.headNav {
+    /*Login and Sign-in */
+    margin-top: 0px;
+    text-align: right;
+    font-size: 18px;
+
+}   
+
+.headNav>a {
+    /* a tag for Login and Sign-in  */
+    text-decoration: none;
+    color: rgb(35, 35, 95);
+    letter-spacing: 3px;
+    padding-right: 30px;
+    text-align: center;
+}
+
+#topHeader {
+    /* Tutorium */
+    padding-top: 35px;
+    margin-bottom: 0px;
+    padding-left: 30px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background-color: rgb(246, 246, 240);
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+#topHeader>a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.menu_wrap {
+    /* About us, tutors, contact ... */
+    font-family: sans-serif;
+    margin-top: 1px;
+    padding-top: 0px;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(202, 202, 163);
+    text-align: center;
+    font-size: 28px;
+
+
+}
+
+.menu_wrap a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    padding-inline: 80px;
+
+}
+
+.menu_wrap>ul>li {
+    list-style: none;
+    display: inline-block;
+
+}
+
+.dep1 {
+    margin-top: 5px;
+    padding-top: 4px;
+}
+
+
+
+.menu_wrap a:hover {
+    color: beige;
+}
+
+.menu_wrap .dep1>li {
+
+    vertical-align: top;
+
+}
+
+.menu_wrap .dep1>li:hover>.dep2 {
+    display: block;
+
+}
+
+.menu_wrap .dep1>li:hover>a {
+    background-color: orange;
+    color: blue;
+}
+
+.menu_wrap .dep2 {
+    display: none;
+    list-style: none;
+    background-color: rgb(202, 202, 163);
+    opacity: 0.7;
+
+
+}
+
+.menu_wrap .dep2>li {
+    text-align: center;
+}
+
+.menu_wrap .dep2>li>a {
+    padding-left: 40px;
+    font: 10px;
+}
+
+.menu_wrap .dep2>li>a:hover {
+    text-decoration: underline;
+}
+
+
+.flexbox-container {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    font-size: 28px;
+}
+
+img {
+    width: 300px;
+    height: 400px;
+}
+
+input[type="button"] {
+    margin-left: 700px;
+    background-color: rgb(226, 249, 226);
+}
+
+.flexbox-container-siteMap {
+    background-color: rgb(232, 232, 205);
+
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.flexbox-container-siteMap a {
+    color: black;
+}
+
+
+
+.flexbox-container-footer {
+    /* footer */
+
+    margin-bottom: 0px;
+    display: flex;
+    text-align: left;
+    font-size: 18px;
+    width: 100%;
+    font-family: sans-serif;
+    background-color: rgb(246, 246, 240);
+    line-height: 30px;
+
+
+}
+
+.flexbox-footer1 {
+    /* footer - Tutorium */
+
+    padding-top: 20px;
+    margin-left: 60px;
+    width: 110px;
+    font-size: 30px;
+
+}
+
+.flexbox-footer1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.flexbox-footer2 {
+    /* footer-locationn */
+    margin-left: 350px;
+    font-size: 18px;
+    word-spacing: 2px;
+}
+
+/* CSS for tutor list (Suyeon)*/
+
+.search {
+    /* search box */
+    display: inline;
+    float: left;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+
+}
+
+.flexbox-container-tutor{
+    margin-top: 100px;
+    margin-bottom: 40px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    row-gap: 50px;
+    column-gap: 0px;
+    text-align: center;
+}
+
+.flexbox-item1 {
+ /* border: 1px solid black; */
+
+}
+
+.flexbox-container-tutor img {
+    width: 250px;
+    height: 250px;
+}
+
+/* CSS Contact Page (Leonardo)*/
+
+#contact-main{
+    width: 100%;
+}
+
+#contact-title{
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: rgb(45, 48, 48);
+    color: azure;
+    padding: 10px;
+    margin-top: 5px;   
+}
+
+.container-form{
+    background-color: rgb(246, 246, 240);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: larger;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.div-form{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding-bottom: 10px;
+}
+
+.form-span{
+    color:red
+}
+
+.div-form-input{
+    border-style: solid;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 15px;
+    border-color: rgba(40, 50, 59, 0.164);
+}
+
+.div-form-select{
+    margin-right: 20%;
+    margin-top: 10px;
+    border-style: solid;
+    height: 30px;
+    color: rgb(75, 74, 74);
+    font-size: 15px;
+    border-color: rgba(40, 50, 59, 0.164);
+}
+
+::placeholder{
+    color: rgba(165, 160, 160, 0.808);
+}
+
+:hover::placeholder {
+    visibility: hidden;
+}
+
+.div-form-textarea{
+    margin-right: 20%;
+    margin-top: 10px;
+    border-style: solid;
+    opacity: 1; 
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-color: rgba(40, 50, 59, 0.164);
+}
+
+#button-container{
+   display: grid;
+   grid-template-columns: 15% 15%;
+}
+
+#div-form-submit{
+    padding: 10px;
+    width: 100px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 102, 255, 0.685);
+    border: 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin-left: 18px;
+}
+
+:hover#div-form-submit{
+    font-weight: bold;
+    background-color: rgb(0, 102, 255);
+    cursor: pointer;
+}
+
+#div-form-reset{
+    padding: 10px;
+    width: 100px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 102, 255, 0.685);
+    border: 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+:hover#div-form-reset{
+    font-weight: bold;
+    background-color: rgb(0, 102, 255);
+    cursor: pointer;
+}
+
+#qa-section{
+    margin-top: 10px;
+    width: 100%;
+}
+
+#qa-title{
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: rgb(45, 48, 48);
+    color: azure;
+    padding: 10px;
+    margin-top: 5px;  
+}
+
+#qa-subcontent{
+    font-size: 1.4rem;
+    text-align: center;
+    background-color: rgb(111, 119, 119);
+    color: mintcream;
+    padding: 10px;
+}
+
+#questions-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.questions-div{
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(127, 240, 255, 0.096);
+    border-style: ridge;
+    font-size: 1.2rem;
+    height: 40%;
+    position: relative;
+}
+
+p:nth-child(2){
+    visibility: hidden;
+}
+
+:hover.questions-div > p:nth-child(2){
+    visibility: visible;
+    cursor: pointer;
+    color: rgb(226, 43, 113);
+    overflow:scroll;
+}
+
+:hover.questions-div{
+    height: 80%;
+    cursor: help
+}
+
+#qa-subcontent > p {
+	font-style: italic;
+	text-transform: capitalize;
+	color: rgb(217, 5, 236);
+	-webkit-text-stroke: rgb(255, 255, 255);
+	-webkit-text-stroke-width:1px;
+	text-shadow: 2px 2px 10px;
+	transition: all 0.5s ease-in-out;
+	text-align: center;
+	letter-spacing: 0.1em;
+	animation: flicker 0.6s ease-in-out infinite alternate;
+}
+
+@keyframes flicker {
+	0% {
+		opacity: 0.5;
+		text-shadow: 2px 2px 10px;
+	}
+	100% {
+		opacity: 1;
+		text-shadow: 2px 2px 20px ;
+	}
+}
+
