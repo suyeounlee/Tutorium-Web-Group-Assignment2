@@ -1,9 +1,18 @@
+<<<<<<< HEAD
 body{
     background-image: url(CourseBG.png);
     background-size:cover;
 }
 
 .top{
+=======
+body {
+    background-image: url(CourseBG.png);
+    background-size: cover;
+}
+
+.top {
+>>>>>>> 0bb10e51e619b339883eb2b65072356fd2686656
     background-image: url(Untitled-3.png);
     background-color: #f1f1f1;
     background-repeat: no-repeat;
@@ -16,6 +25,7 @@ body{
     border-style: outset;
 
 }
+<<<<<<< HEAD
   
 .section{
     padding: 0;
@@ -27,11 +37,23 @@ body{
     position: relative;
     width: 1750px;
     display: flex;
+=======
+
+
+
+.container {
+    position: relative;
+    width: 5000px;
+    height: 100%;
+    display: flex;
+    margin-left: 200px;
+>>>>>>> 0bb10e51e619b339883eb2b65072356fd2686656
     flex-wrap: wrap;
     transform-style: preserve-3d;
     perspective: 500px;
     width: auto;
     overflow: hidden;
+<<<<<<< HEAD
   }
 
   .box {
@@ -40,17 +62,36 @@ body{
     color: #ffffff;
     width: 225px;
     height: 225px;
+=======
+}
+
+.box {
+    float: left;
+    position: relative;
+    color: #ffffff;
+    width: 375px;
+    height: 350px;
+>>>>>>> 0bb10e51e619b339883eb2b65072356fd2686656
     text-align: center;
     background: #000;
     transition: 00.5s;
     transform-style: preserve-3d;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.755);
     border-style: outset;
+<<<<<<< HEAD
     margin: 2px;
     display: none;/* Hidden by default */
   }
 
  /* .container .box{
+=======
+    margin: 5px;
+    display: none;
+    /* Hidden by default */
+}
+
+/* .container .box{
+>>>>>>> 0bb10e51e619b339883eb2b65072356fd2686656
     float: left;
     position: relative;
     width: 225px;
@@ -64,6 +105,7 @@ body{
     border-style: outset;
     
    
+<<<<<<< HEAD
 }  */
   
   /* The "show" class is added to the filtered elements */
@@ -73,11 +115,23 @@ body{
   
   /* Style the buttons */
   .btn {
+=======
+}  
+  
+  /* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+/* Style the buttons */
+.btn {
+>>>>>>> 0bb10e51e619b339883eb2b65072356fd2686656
     border: none;
     outline: none;
     padding: 12px 16px;
     background-color: #f1f1f1;
     cursor: pointer;
+<<<<<<< HEAD
   }
   
   /* Add a light grey background on mouse-over */
@@ -109,10 +163,47 @@ body{
 .container .box .imgbox{
     position: absolute;
     top: 0;
+=======
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+    background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+
+/* .container:hover .box {
+    transform: rotateY(25deg);
+
+}
+
+.container .box:hover~.box {
+    transform: rotateY(-25deg);
+
+}
+
+.container .box:hover {
+    transform: rotateY(0deg);
+
+} */
+
+.container .box .imgbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+>>>>>>> 0bb10e51e619b339883eb2b65072356fd2686656
     width: 100%;
     height: 100%;
 }
 
+<<<<<<< HEAD
 .container .box:hover .imgbox{
     opacity: 0.4;
 }
@@ -129,6 +220,29 @@ body{
 }
 
 .container .box .content{
+=======
+.container .box:hover .imgbox {
+    opacity: 0.4;
+}
+
+header h2 {
+    background-color: #fad02c;
+    color: #ffffff;
+}
+
+.container .box .imgbox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.container .box .content {
+>>>>>>> 0bb10e51e619b339883eb2b65072356fd2686656
     position: absolute;
     top: 0;
     left: 0;
@@ -142,7 +256,11 @@ body{
 
 }
 
+<<<<<<< HEAD
 .container .box .content h4{
+=======
+.container .box .content h4 {
+>>>>>>> 0bb10e51e619b339883eb2b65072356fd2686656
     color: white;
     transition: 000.5s;
     text-transform: uppercase;
@@ -151,19 +269,31 @@ body{
     transform: translateY(200px);
 }
 
+<<<<<<< HEAD
 .container .box:hover .content h4{
+=======
+.container .box:hover .content h4 {
+>>>>>>> 0bb10e51e619b339883eb2b65072356fd2686656
     transform: translateY(0px);
     transition-delay: 0.5s;
 }
 
+<<<<<<< HEAD
 .container .box .content p{
+=======
+.container .box .content p {
+>>>>>>> 0bb10e51e619b339883eb2b65072356fd2686656
     color: #fff;
     transition: 000.5s;
     font-size: 20px;
     transform: translateY(220px);
 }
 
+<<<<<<< HEAD
 .container .box:hover .content p{
+=======
+.container .box:hover .content p {
+>>>>>>> 0bb10e51e619b339883eb2b65072356fd2686656
     transform: translateY(0px);
     transition-delay: 0.6s;
 }
