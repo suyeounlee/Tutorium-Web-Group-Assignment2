@@ -7,8 +7,8 @@ function signup() {
     y.style.left = "50px";
     z.style.left = "110px";
 
-} 
- 
+}
+
 function login() {
     x.style.left = "50px";
     y.style.left = "450px";
