@@ -59,15 +59,6 @@ body {
 
 }
 
-.menu_wrap a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 22px;
-    padding-inline: 80px;
-
-}
-
 .menu_wrap>ul>li {
     list-style: none;
     display: inline-block;
@@ -240,7 +231,3 @@ input[type="button"] {
     display: block;
 }
 
-
-<<<<<<< HEAD
-/* CSS for Subject.html */
-=======>>>>>>>892af3bb87acce7a03615ff826b0e98be01cf3bb
