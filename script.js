@@ -15,7 +15,7 @@
 
 const searchBox1 = document.getElementById('searchBox');
 const searchBtn = document.getElementById('searchButton');
-
+ 
 
 searchBox1.addEventListener("keyup", searchName);
 
