@@ -220,11 +220,6 @@ input[type="button"] {
     text-align: center;
 }
 
-.flexbox-item1 {
- /* border: 1px solid black; */
-
-}
-
 .flexbox-container-tutor img {
     width: 250px;
     height: 250px;
@@ -417,4 +412,3 @@ p:nth-child(2){
 		text-shadow: 2px 2px 20px ;
 	}
 }
-
