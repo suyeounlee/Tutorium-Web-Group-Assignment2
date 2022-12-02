@@ -12,7 +12,7 @@
 // });
 
 /*  Suyeon: findTutors.html  */
-
+ 
 const searchBox1 = document.getElementById('searchBox');
 const searchBtn = document.getElementById('searchButton');
   

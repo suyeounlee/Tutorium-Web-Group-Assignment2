@@ -10,7 +10,15 @@ form.addEventListener('submit', e => {
 	
 	checkInputs();
 });
+<<<<<<< HEAD
   
+=======
+<<<<<<< HEAD
+
+=======
+   
+>>>>>>> 7512b8b5633ffa42b0831851d13f7dca0efa0d39
+>>>>>>> 869b8799169b4581f871fca894386ca59493f0c2
 function checkInputs() {
 	// trim to remove the whitespaces
 	const usernameValue = username.value.trim();
