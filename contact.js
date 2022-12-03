@@ -1,10 +1,9 @@
-
 var errorFirstName = document.createElement('p');
 var errorLastName = document.createElement('p');
 var errorMail = document.createElement('p');
 var errorInterest = document.createElement('p');
 var errorMessage = document.createElement('p');
- 
+
 function validate() { 
      
     var emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
