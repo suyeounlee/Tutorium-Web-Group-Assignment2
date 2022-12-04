@@ -1,3 +1,43 @@
+<?php
+
+// $email = $_POST['email'];
+// $user = $_POST['username'];
+
+
+$host = "localhost";
+$dbname = "web_assignment_2";
+$username = "root";
+$password = "1234";
+
+$conn = mysqli_connect($host, $username, $password, $dbname);
+
+if (mysqli_connect_errno()) {
+    die("Connection error: " . mysqli_connect_error());
+}
+
+$sql = "select * from `signup`";
+
+$result = mysqli_query($conn, $sql);
+
+if($result) {
+while($row = mysqli_fetch_assoc($result)) {
+$user = $row['username'];
+$email = $row['email'];
+// $password1 = $row['$password1'];
+
+
+// $interest = $row['interest'];
+// echo $firstName ." ";
+
+}
+}
+
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +46,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login/Signup</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="update.css">
     <script src="https://kit.fontawesome.com/6b90367316.js" crossorigin="anonymous"></script>
     <!-- <script src="/signup.js" crossorigin="anonymous"></script> -->
 
@@ -16,6 +56,11 @@
 
 <body>
     <header>
+
+        <?php echo "hello"  . $user . $email ?>
+
+
+
         <a href="index.html" class="logo">Tutorium</a>
 
         <nav class="navbar">
@@ -35,64 +80,73 @@
             </ul>
 
         </nav>
-
+  
 
         <input type="button" value="Login/Signup" class="log" id="logg">
 
+     
+      
+
     </header>
+
+
     <div class="container">
         <div class="form1">
-            <div class="button">
+            <!-- <div class="button">
                 <div id="btn"></div>
                 <button type="button" class="topbtn" onclick="login()">Log In</button>
                 <button type="button" class="topbtn" onclick="signup()">Upgrade</button>
-            </div>
-            <form action="login.html" id="login" class="input" method="get">
-                <input type="text" class="sifi" placeholder="User Id" required>
-                <input type="text" class="sifi" placeholder="Enter password" required>
-                <!-- <input type="checkbox" name="rempas" class="check-box"><label for="rempas">Remember Password</label> -->
-                <button type="submit" class="sub-btn">Log In</button>
-                <img src="/Photos/Logo1.png" class="lo-im" alt="LOgo">
+            </div> -->
+            <!--
+                <form action="login.html" id="login" class="input" method="get">
+                    <input type="text" class="sifi" placeholder="User Id" required>
+                    <input type="text" class="sifi" placeholder="Enter password" required>
+                     //<input type="checkbox" name="rempas" class="check-box"><label for="rempas">Remember Password</label> 
+                    <button type="submit" class="sub-btn">Log In</button>
+                    <img src="/Photos/Logo1.png" class="lo-im" alt="LOgo">
 
-            </form>
+                </form> -->
 
-            <form action="sign.php" id="upgrade" class="form" method="post" name="form" onsubmit="return checkInputs()">
+                <?php echo "Hello " . $user . "<br>Do you want to update your information?" ?>
+
+            <form action="" id="upgrade" class="form" method="post" name="form" onsubmit="return checkInputs()">
                 <div class="form-control">
 
-                    <input type="email" placeholder="Email" class="sifi" id="email" name="email">
+                    <input type="email" placeholder="Email" class="sifi" id="email" name="email" readonly value="<?php echo $email ?>">
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-exclamation-circle"></i>
                     <small>Error message</small>
                 </div>
                 <div class="form-control">
 
-                    <input type="text" placeholder="User name" class="sifi" id="username" name="username">
+                    <input type="text" placeholder="User name" class="sifi" id="username" name="username" readonly value="<?php echo $user ?>">
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-exclamation-circle"></i>
                     <small>Error message</small>
                 </div>
+
                 <div class="form-control">
 
-                    <input type="password" placeholder="Password" class="sifi" id="password" name="password">
+                    <input type="password" class="sifi" id="password" name="password1" >
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-exclamation-circle"></i>
                     <small>Error message</small>
                 </div>
-                <div class="form-control">
+                <!-- <div class="form-control">
 
                     <input type="password" placeholder="Password" class="sifi" id="password2" name="password2">
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-exclamation-circle"></i>
                     <small>Error message</small>
                 </div>
-                <!-- <div class="checkbox">
-                    <input type="checkbox" name="terms" id="terms">
-                    <label for="terms">I agree to the terms and conditions</label>
-                </div> -->
+         -->
 
-                <div>
-                    <button type="submit" class="si-btn">Sign Up</button>
+               
+                <div class="buttonGrp">
+                    <button type="submit" class="si-btn"><a href="update_go.php?updateid='<?php echo $user; ?>'">Go to Update</a></button>
+                    <button class="si-btn" value="Delete"><a href="delete.php?deleteid='<?php echo $user; ?>'"> Go to Delete</a></button>
                 </div>
+            
 
             </form>
         </div>
