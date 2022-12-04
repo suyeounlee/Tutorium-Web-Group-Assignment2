@@ -5,10 +5,10 @@ $email = $_POST['email'];
 $interest = $_POST['interest'];
 $message = $_POST['message'];
 
-$host = "localhost";
+$host = "localhost:3310";
 $dbname = "web_assignment_2";
 $username = "root";
-$password = "1234";
+$password = "";
 
 $conn = mysqli_connect($host, $username, $password, $dbname);
 

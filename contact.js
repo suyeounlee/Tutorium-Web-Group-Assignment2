@@ -53,7 +53,7 @@ function validate() {
 
     if ((isEmailValid == true) && (isFirstNameValid == true) && (islastNameValid == true) && 
     (interestValue != 'none') && (messageValue != '')) {
-        window.confirm(`User "${firstNameValue.toLowerCase()}" has subscribed succesfully`);
+        window.confirm(`Your message has been received`);
         document.getElementsByTagName("form").submit();
         return true;
     }
@@ -79,4 +79,4 @@ lowerCaseLogin.addEventListener("click", function(){
 
 var errlistMsg = ["❌ First name should be non-empty , within 20 characters long and no numbers allowed."
 ,"❌ Last name should be non-empty , within 20 characters long and no numbers allowed.", "❌ Email address should be non-empty with the format xyx@xyz.xyz",
-"❌ Please select a course.", "❌ Please accept terms and conditions"]
+"❌ Please select a course.", "❌ Message shouldn't be blank."]
