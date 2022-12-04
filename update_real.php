@@ -1,33 +1,39 @@
 <?php
 
-// $email = $_POST['email'];
-// $user = $_POST['username'];
-// $password1 = $_POST['password1'];
+// // $newPassword = $_REQUEST['newPassword'];
 
 
 
-$host = "localhost";
-$dbname = "web_assignment_2";
-$username = "root";
-$password = "1234";
-
-$conn = mysqli_connect($host, $username, $password, $dbname);
-
-if (mysqli_connect_errno()) {
-    die("Connection error: " . mysqli_connect_error());
-}
-
-$password1 = $_GET['password1'];
-$updateid = $_GET['updateid'];
-
-$sql = "update `signup` set password=$password1 where username = '$updateid'";
+// $host = "localhost";
+// $dbname = "web_assignment_2";
+// $username = "root";
+// $password = "1234";
 
 
+// $conn = mysqli_connect($host, $username, $password, $dbname);
+
+// if (mysqli_connect_errno()) {
+//     die("Connection error: " . mysqli_connect_error());
+// }
 
 
+// if (isset($_POST['updateid'])) {
+//     $user = $_POST['updateid'];
+//     $password1 = $_GET['password1'];
 
-echo $updateid;
-echo $password1;
+//     $sql = "update signup set password = $password1 where username = $user";
+
+
+//     $stmt = mysqli_stmt_init($conn);
+
+//     if (!mysqli_stmt_prepare($stmt, $sql)) {
+//         die(mysqli_error($conn));
+//     }
+
+//     mysqli_stmt_execute($stmt);
+//     header("Location: contact.html");
+// }
+
 
 ?>
 
@@ -44,7 +50,8 @@ echo $password1;
 </head>
 
 <body>
-    Update_real.php
+  
+    Your password is set to 'Ab1234'.
 </body>
 
 </html>

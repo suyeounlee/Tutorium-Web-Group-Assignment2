@@ -2,7 +2,7 @@
 
 // $email = $_POST['email'];
 // $user = $_POST['username'];
-
+// $newP = $_REQUEST['$newP'];
 
 $host = "localhost";
 $dbname = "web_assignment_2";
@@ -15,21 +15,23 @@ if (mysqli_connect_errno()) {
     die("Connection error: " . mysqli_connect_error());
 }
 
+
+
 $sql = "select * from `signup`";
 
 $result = mysqli_query($conn, $sql);
 
 if($result) {
-while($row = mysqli_fetch_assoc($result)) {
+while($row = mysqli_fetch_array($result)) {
 $user = $row['username'];
 $email = $row['email'];
-// $password1 = $row['$password1'];
+$password1 = $row['password'];
 
+}
 
 // $interest = $row['interest'];
 // echo $firstName ." ";
 
-}
 }
 
 
@@ -57,7 +59,7 @@ $email = $row['email'];
 <body>
     <header>
 
-        <?php echo "hello"  . $user . $email ?>
+        <!-- <?php echo "hello". $password1 . $user . $email ?> -->
 
 
 
@@ -127,7 +129,7 @@ $email = $row['email'];
 
                 <div class="form-control">
 
-                    <input type="password" class="sifi" id="password" name="password1" >
+                    <input type="hidden" class="sifi" id="password" name="password1" >
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-exclamation-circle"></i>
                     <small>Error message</small>
@@ -143,7 +145,7 @@ $email = $row['email'];
 
                
                 <div class="buttonGrp">
-                    <button type="submit" class="si-btn"><a href="update_go.php?updateid='<?php echo $user; ?>'">Go to Update</a></button>
+                    <button type="button" class="si-btn" name="submit"><a href="update_go.php?updateid='<?php echo $user; ?>'">Go to Update</a></button>
                     <button class="si-btn" value="Delete"><a href="delete.php?deleteid='<?php echo $user; ?>'"> Go to Delete</a></button>
                 </div>
             

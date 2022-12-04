@@ -1,12 +1,12 @@
 <?php
 
-
-$password1 = $_REQUEST['password1'];
+// $newPassword = $_REQUEST['newPassword'];
 
 $host = "localhost";
 $dbname = "web_assignment_2";
 $username = "root";
 $password = "1234";
+
 
 $conn = mysqli_connect($host, $username, $password, $dbname);
 
@@ -14,16 +14,44 @@ if (mysqli_connect_errno()) {
     die("Connection error: " . mysqli_connect_error());
 }
 
-$sql = "select * from `signup`";
-$result=mysqli_query($conn, $sql);
-if($result) {
-while($row=mysqli_fetch_assoc($result)) {
-$user = $row['username'];
-$email = $row['email'];
-}
+
+
+if (isset($_GET['updateid'])) {
+    $user=$_GET['updateid'];
+    
+    $sql = "update signup set password = 'Ab1234' where username = $user";
+
+    $result = mysqli_query($conn, $sql);
+    // echo "<script> alert('updated OK'); </script>" ;
+    
+    if($result) {
+        // header("Location: update_real.php" );
+        // echo '<script> alert ("message successfully sent") </script>';
+        
+    } else {
+        die(mysqli_error($conn));
+    }
 }
 
 
+
+
+// if (isset($_GET['updateid'])) {
+//     $user=$_GET['updateid'];
+    
+//     $sql = "update signup set password = 'newPassworddd' where username = $user";
+
+//     $result = mysqli_query($conn, $sql);
+//     echo "<script> alert('updated OK'); </script>" ;
+    
+//     if($result) {
+//         header("Location: update_real.php" );
+//         // echo '<script> alert ("message successfully sent") </script>';
+        
+//     } else {
+//         die(mysqli_error($conn));
+//     }
+// }
 
 
 ?>
@@ -87,12 +115,12 @@ $email = $row['email'];
                     <img src="/Photos/Logo1.png" class="lo-im" alt="LOgo">
 
                 </form> -->
-            <?php echo $user . "<br> You can only change Password!" ?>
+            <!-- <?php echo $user . "<br> You can only change Password!" ?> -->
 
-            <form action="" id="upgrade" class="form" method="post" name="form" onsubmit="return checkInputs()">
+            <form action="update_real.php" id="upgrade" class="form" method="POST" name="form" onsubmit="return checkInputs()">
 
 
-
+<!-- 
                 <div class="form-control">
 
                     <input type="email" placeholder="Email" class="sifi" id="email" name="email" readonly value="<?php echo $email ?>">
@@ -102,14 +130,14 @@ $email = $row['email'];
                 </div>
                 <div class="form-control">
 
-                    <input type="text" placeholder="User name" class="sifi" id="username" name="username" readonly value="<?php echo $user ?>">
+                    <input type="text" placeholder="User name" class="sifi" id="username" name="username" value="<?php echo $user ?>">
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-exclamation-circle"></i>
                     <small>Error message</small>
-                </div>
+                </div> -->
                 <div class="form-control">
 
-                    <input type="password" placeholder="Password" class="sifi" id="password" name="password1">
+                    <input type="password" placeholder="New password" class="sifi" id="password" name="password1">
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-exclamation-circle"></i>
                     <small>Error message</small>
@@ -127,31 +155,30 @@ $email = $row['email'];
                 </div> -->
 
 
-            
+
                 <div class="buttonGrp">
-                
-                    <button class="si-btn"><a href="update_real.php?updateid=<?php echo $user; ?>&password1=<?php echo $password1 ?>">Update</a></button>
-
-                                                   
-                    </form>
-                </div>
-            
-
+                    <input type="submit" class="si-btn" value="update">
+                    <!-- <button class="si-btn"><a href="update_real.php?updateid=<?php echo $user; ?>">Update</a></button> -->
 
             </form>
         </div>
-        <footer>
-            <div class="footer-content">
-                <h3>Tutorium</h3>
-                <p>Tutorium | 1385 Woodroffe Ave, Nepean, ON <br>
-                    CST8285-Web-Programming Group Assignment (Algonquin College) <br>
-                </p>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2022 Copyright. design by<span> Juho | Leonardo | Mathunan | Su Yeoun </span><br>
-                </p>
-            </div>
-        </footer>
+
+
+
+        </form>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <h3>Tutorium</h3>
+            <p>Tutorium | 1385 Woodroffe Ave, Nepean, ON <br>
+                CST8285-Web-Programming Group Assignment (Algonquin College) <br>
+            </p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2022 Copyright. design by<span> Juho | Leonardo | Mathunan | Su Yeoun </span><br>
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>

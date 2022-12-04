@@ -12,10 +12,6 @@ if (mysqli_connect_errno()) {
 }
 
 
-
-
-
-
 if(isset($_GET['deleteid'])) {
     $user=$_GET['deleteid'];
     
