@@ -1,44 +1,33 @@
+<!-- update.php by Su Yeoun Lee -->
+
 <?php
-
-// $email = $_POST['email'];
-// $user = $_POST['username'];
-// $newP = $_REQUEST['$newP'];
-
+// variables for database
 $host = "localhost";
 $dbname = "web_assignment_2";
 $username = "root";
 $password = "1234";
 
+// connection to database
 $conn = mysqli_connect($host, $username, $password, $dbname);
 
+// condition for connect error
 if (mysqli_connect_errno()) {
     die("Connection error: " . mysqli_connect_error());
 }
 
-
-
+// sql select query from signup table
 $sql = "select * from `signup`";
 
 $result = mysqli_query($conn, $sql);
-
-if($result) {
-while($row = mysqli_fetch_array($result)) {
-$user = $row['username'];
-$email = $row['email'];
-$password1 = $row['password'];
-
+if ($result) {
+    while ($row = mysqli_fetch_array($result)) {
+        $user = $row['username'];
+        $email = $row['email'];
+        $password1 = $row['password'];
+    }
 }
-
-// $interest = $row['interest'];
-// echo $firstName ." ";
-
-}
-
-
-
 
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -58,13 +47,7 @@ $password1 = $row['password'];
 
 <body>
     <header>
-
-        <!-- <?php echo "hello". $password1 . $user . $email ?> -->
-
-
-
         <a href="index.html" class="logo">Tutorium</a>
-
         <nav class="navbar">
             <ul>
                 <li><a href="/contact.html">Contact Us</a>
@@ -80,15 +63,8 @@ $password1 = $row['password'];
                 <li><a href="/findTutors.html">Find tutors</a> </li>
                 <li><a href="/subject.html">Subjects</a></li>
             </ul>
-
         </nav>
-  
-
         <input type="button" value="Login/Signup" class="log" id="logg">
-
-     
-      
-
     </header>
 
 
@@ -108,12 +84,10 @@ $password1 = $row['password'];
                     <img src="/Photos/Logo1.png" class="lo-im" alt="LOgo">
 
                 </form> -->
-
-                <?php echo "Hello " . $user . "<br>Do you want to update your information?" ?>
+            <?php echo "<p id='phpMsg'> Hello " . "<span>" . $user . " 😃</span> <br>Do you want to update your information? </p>" ?>
 
             <form action="" id="upgrade" class="form" method="post" name="form" onsubmit="return checkInputs()">
                 <div class="form-control">
-
                     <input type="email" placeholder="Email" class="sifi" id="email" name="email" readonly value="<?php echo $email ?>">
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-exclamation-circle"></i>
@@ -129,7 +103,7 @@ $password1 = $row['password'];
 
                 <div class="form-control">
 
-                    <input type="hidden" class="sifi" id="password" name="password1" >
+                    <input type="hidden" class="sifi" id="password" name="password1">
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-exclamation-circle"></i>
                     <small>Error message</small>
@@ -142,16 +116,13 @@ $password1 = $row['password'];
                     <small>Error message</small>
                 </div>
          -->
-
-               
                 <div class="buttonGrp">
                     <button type="button" class="si-btn" name="submit"><a href="update_go.php?updateid='<?php echo $user; ?>'">Go to Update</a></button>
                     <button class="si-btn" value="Delete"><a href="delete.php?deleteid='<?php echo $user; ?>'"> Go to Delete</a></button>
                 </div>
-            
-
             </form>
         </div>
+
         <footer>
             <div class="footer-content">
                 <h3>Tutorium</h3>
@@ -164,6 +135,6 @@ $password1 = $row['password'];
                 </p>
             </div>
         </footer>
-    </body>
-    
-    </html>
+</body>
+
+</html>

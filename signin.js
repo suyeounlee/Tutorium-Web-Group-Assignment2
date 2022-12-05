@@ -1,4 +1,6 @@
+// Mathunan - signin.js
 
+//function for validation
 function formvalidation(thisform) {
     with (thisform) {
         if (emailValidation(email) == false) {
@@ -16,6 +18,7 @@ function formvalidation(thisform) {
     }
 }
 
+//function for email validation
 function emailValidation(email) {
     with (document.form) {
         if (email.value == " ") {
@@ -32,6 +35,8 @@ function emailValidation(email) {
         }
     }
 }
+
+//function for name validation
 function nameValidation(username) {
     with (document.form) {
         if (username.value == "" || username.length > 20) {
@@ -45,8 +50,7 @@ function nameValidation(username) {
     }
 }
 
-
-
+//function for password validation
 function passwordValidition(password) {
     with (document.form) {
         const passwordValue = password.value;
@@ -71,6 +75,7 @@ function passwordValidition(password) {
     }
 }
 
+//function for re-password validation
 function password2Validition(password2) {
     with (document.form) {
         if (password2.value == "") {
@@ -88,6 +93,7 @@ function password2Validition(password2) {
     }
 }
 
+//function to set error
 function setErrorFor(input, message) {
     const formControl = input.parentElement;
     const small = formControl.querySelector('small');
@@ -95,11 +101,13 @@ function setErrorFor(input, message) {
     small.innerText = message;
 }
 
+//function to set success
 function setSuccessFor(input) {
     const formControl = input.parentElement;
     formControl.className = 'form-control success';
 }
 
+//function for email regular expression.
 function isEmail(email) {
     return /\S+@\S+\.\S+/.test(email);
 }

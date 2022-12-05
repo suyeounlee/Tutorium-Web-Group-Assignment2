@@ -1,8 +1,12 @@
+// login.js for validation by Mathunan
+
+//variables
 const usernameValue = username.value.trim();
 const emailValue = email.value.trim();
 const passwordValue = password.value.trim();
 const password2Value = password2.value.trim();
 
+// submit eventlistner for validation
 form.addEventListener('submit', event => {
     event.preventDefault();
 
@@ -26,6 +30,7 @@ function formvalidation(thisform) {
     }
 }
 
+//function for email validation
 function emailValidation(email) {
     with (document.form) {
         if (email.value == " ") {
@@ -39,6 +44,8 @@ function emailValidation(email) {
         }
     }
 }
+
+//function for name validation
 function nameValidation(username) {
     with (document.form) {
         if (username.value == "" || username.length > 20) {
@@ -51,8 +58,7 @@ function nameValidation(username) {
     }
 }
 
-
-
+//function for password validation
 function passwordValidition(password) {
     with (document.form) {
         const passwordValue = password.value;
@@ -76,6 +82,7 @@ function passwordValidition(password) {
     }
 }
 
+//function for re-password validation
 function password2Validition(password2) {
     with (document.form) {
         if (password2.value == "") {
@@ -92,6 +99,7 @@ function password2Validition(password2) {
     }
 }
 
+//function to see Error 
 function setErrorFor(input, message) {
     const formControl = input.parentElement;
     const small = formControl.querySelector('small');
@@ -99,11 +107,13 @@ function setErrorFor(input, message) {
     small.innerText = message;
 }
 
+//function to set success
 function setSuccessFor(input) {
     const formControl = input.parentElement;
     formControl.className = 'form-control success';
 }
 
+// email regular expression
 function isEmail(email) {
     return /\S+@\S+\.\S+/.test(email);
 }

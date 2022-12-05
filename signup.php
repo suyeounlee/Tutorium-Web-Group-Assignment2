@@ -1,24 +1,30 @@
+<!-- signup.php by Juho -->
 <?php
 
+//variables for signup form
 $email = $_POST['email'];
 $user = $_POST['username'];
 $password1 = $_POST['password1'];
 
+// variables for database
 $host = "localhost";
 $dbname = "web_assignment_2";
 $username = "root";
 $password = "1234";
 
+
+// connection to database
 $conn = mysqli_connect($host, $username, $password, $dbname);
 
+// condition for connect error
 if (mysqli_connect_errno()) {
     die("Connection error: " . mysqli_connect_error());
 }
 
+// sql insert query for signup table
 $sql = "INSERT INTO signup (email, username, password) values (?, ?, ?)";
 
 $stmt = mysqli_stmt_init($conn);
-
 
 if (!mysqli_stmt_prepare($stmt, $sql)) {
     die(mysqli_errno($conn));
@@ -54,8 +60,6 @@ mysqli_stmt_execute($stmt);
                         <li><a href="q&a.html">Q&A</a></li>
                     </ul>
                 </li>
-
-
                 <li><a href="findTutors.html">Find tutors</a> </li>
                 <li><a href="/subject.html">Subjects</a></li>
 
@@ -64,13 +68,8 @@ mysqli_stmt_execute($stmt);
                         <li><a href="/location.html">Location</a></li>
                     </ul>
                 </li>
-
-
-
             </ul>
-
         </nav>
-
 
         <?php
         $user = $_POST['username'];
@@ -96,23 +95,12 @@ mysqli_stmt_execute($stmt);
                 echo "Welcome $row[1]";
                 ?>
             </a></div>
-
-
-            
         <a href="index.html"> <button id="logout"> Logout</button> </a>
 
-
-
     </header>
-
-
-
-
     <div class="headerimg">
         <img src="Photos/Ban.jpg" alt=""><br>
     </div>
-
-
 
     <div class="flexbox-container">
         <div class="flexbox-item-1">
@@ -126,24 +114,16 @@ mysqli_stmt_execute($stmt);
         <div class="flexbox-item-3">
             <img src="./Photos/studygroup.jpg">
             <p>Sutdy Group</p>
-
         </div>
-
     </div>
     </div>
 
     <!-- Site Map show/ hide button (Testing)  -->
-
     <input type="button" value="Hide Sitemap" id="site">
     <br>
-
-
     <div class="flexbox-container-siteMap">
-
         <div class="">
-
         </div>
-
         <div class="flexbox-siteMap1">
             <strong><a href=aboutUs.html>About us</a></strong> <br>
             Location
@@ -158,14 +138,9 @@ mysqli_stmt_execute($stmt);
             <strong> <a href=contact.html> Contact</a></strong> <br>
             Q&A
         </div>
-
         <div class="">
-
         </div>
-
     </div>
-
-
 
     <footer>
         <div class="footer-content">

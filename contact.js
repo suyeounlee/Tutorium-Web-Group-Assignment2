@@ -1,58 +1,59 @@
+//contact.js by Leonardo
 var errorFirstName = document.createElement('p');
 var errorLastName = document.createElement('p');
 var errorMail = document.createElement('p');
 var errorInterest = document.createElement('p');
 var errorMessage = document.createElement('p');
 
-function validate() { 
-     
+function validate() {
+
     var emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     var emailValue = document.querySelector("#email").value;
     var isEmailValid = emailPattern.test(emailValue);
     var firstNamePattern = /^[a-zA-Z]{1,20}$/
     var firstNameValue = document.querySelector("#firstName-input").value;
     var isFirstNameValid = firstNamePattern.test(firstNameValue);
-    
+
     var lastNamePattern = /^[a-zA-Z]{1,20}$/
     var lastNameValue = document.querySelector("#lastName-input").value;
     var islastNameValid = lastNamePattern.test(lastNameValue);
-    
+
     var interestValue = document.querySelector("#interest").value;
     var messageValue = document.querySelector("#message").value;
-    
-    if(!isFirstNameValid) {
+
+    if (!isFirstNameValid) {
         errorAction("firstName-input", 0, errorFirstName);
-    } else if(isFirstNameValid) {
+    } else if (isFirstNameValid) {
         document.forms[0].interest.value.toLowerCase();
         correctValue("firstName-input", errorFirstName);
     }
 
-    if(!islastNameValid) {
+    if (!islastNameValid) {
         errorAction("lastName-input", 1, errorLastName);
-    } else if(islastNameValid) {
+    } else if (islastNameValid) {
         correctValue("lastName-input", errorLastName);
     }
 
-    if(!isEmailValid) {
+    if (!isEmailValid) {
         errorAction("email", 2, errorMail);
-    } else if(isEmailValid) {
+    } else if (isEmailValid) {
         correctValue("email", errorMail);
     }
 
-    if(interestValue == 'none') {
+    if (interestValue == 'none') {
         errorAction("interest", 3, errorInterest);
-    } else if(interestValue) {
+    } else if (interestValue) {
         correctValue("interest", errorInterest);
     }
 
-    if(messageValue == '') {
+    if (messageValue == '') {
         errorAction("message", 4, errorMessage);
-    } else if(messageValue) {
+    } else if (messageValue) {
         correctValue("message", errorMessage);
     }
 
-    if ((isEmailValid == true) && (isFirstNameValid == true) && (islastNameValid == true) && 
-    (interestValue != 'none') && (messageValue != '')) {
+    if ((isEmailValid == true) && (isFirstNameValid == true) && (islastNameValid == true) &&
+        (interestValue != 'none') && (messageValue != '')) {
         window.confirm(`Your message has been received`);
         document.getElementsByTagName("form").submit();
         return true;
@@ -73,10 +74,10 @@ function correctValue(inputId, errorName) {
 }
 
 var lowerCaseLogin = document.querySelector("button");
-lowerCaseLogin.addEventListener("click", function(){
+lowerCaseLogin.addEventListener("click", function () {
     document.getElementById("login").value = document.getElementById("login").value.toLowerCase();
 })
 
 var errlistMsg = ["❌ First name should be non-empty , within 20 characters long and no numbers allowed."
-,"❌ Last name should be non-empty , within 20 characters long and no numbers allowed.", "❌ Email address should be non-empty with the format xyx@xyz.xyz",
-"❌ Please select a course.", "❌ Message shouldn't be blank."]
+    , "❌ Last name should be non-empty , within 20 characters long and no numbers allowed.", "❌ Email address should be non-empty with the format xyx@xyz.xyz",
+    "❌ Please select a course.", "❌ Message shouldn't be blank."]

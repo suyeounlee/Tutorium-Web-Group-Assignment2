@@ -1,11 +1,11 @@
-/* Main Page */
+/* aboutUs.css by Juho  */
 
 /* first container */
 * {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body{
+body {
     width: 100%;
 }
 
@@ -43,7 +43,8 @@ body{
 }
 
 /* paragraph in the container  */
-.paragraph, p {
+.paragraph,
+p {
     position: relative;
     margin-top: 25px;
 }
@@ -54,7 +55,7 @@ span {
     font-weight: bold;
 }
 
-.container{
+.container {
     margin-left: 20%;
     margin-right: 20%;
 }
@@ -211,16 +212,16 @@ footer{
 }
  */
 
- footer{
-    background: linear-gradient(to right,#a8dadc,#457b9d);
+footer {
+    background: linear-gradient(to right, #a8dadc, #457b9d);
     height: auto;
     width: 100vw;
     padding-top: 40px;
-    color:#333 ;
+    color: #333;
     border: none;
 }
 
-.footer-content{
+.footer-content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -229,7 +230,7 @@ footer{
     padding: 0 0 50px 0;
 }
 
-.footer-content > h3{
+.footer-content>h3 {
     font-size: 100px;
     font-weight: 400;
     text-transform: capitalize;
@@ -237,44 +238,44 @@ footer{
     margin: 0;
 }
 
-.footer-content > p{
+.footer-content>p {
     max-width: 500px;
-    margin: 0 ;
+    margin: 0;
     line-height: 28px;
     font-size: 2rem;
 }
 
-.footer-bottom{
-    background: linear-gradient(to right,#1d3557,#457b9d);
+.footer-bottom {
+    background: linear-gradient(to right, #1d3557, #457b9d);
     padding: 20px;
     text-align: center;
     border: none;
 }
 
-.footer-bottom p{
+.footer-bottom p {
     font-size: 30px;
     word-spacing: 2px;
     text-transform: capitalize;
 }
 
-.footer-bottom span{
+.footer-bottom span {
     text-transform: uppercase;
     opacity: 0.4;
     font-weight: 200;
     color: antiquewhite;
 }
 
-footer{
-    background: linear-gradient(to right,#a8dadc,#457b9d);
+footer {
+    background: linear-gradient(to right, #a8dadc, #457b9d);
     height: auto;
     width: 100%;
     padding-top: 40px;
-    color:#333 ;
+    color: #333;
     border: none;
 
 }
 
-.footer-content{
+.footer-content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -283,7 +284,7 @@ footer{
     padding: 0 0 50px 0;
 }
 
-.footer-content h3{
+.footer-content h3 {
     font-size: 1.8rem;
     font-weight: 400;
     text-transform: capitalize;
@@ -291,28 +292,28 @@ footer{
     margin: 0;
 }
 
-.footer-content p{
+.footer-content p {
     max-width: 500px;
-    margin: 0 ;
+    margin: 0;
     line-height: 28px;
     font-size: 14px;
 }
 
-.footer-bottom{
-    background: linear-gradient(to right,#1d3557,#457b9d);
+.footer-bottom {
+    background: linear-gradient(to right, #1d3557, #457b9d);
     /* width: 100%; */
     padding: 20px;
     text-align: center;
     border: none;
 }
 
-.footer-bottom p{
+.footer-bottom p {
     font-size: 14px;
     word-spacing: 2px;
     text-transform: capitalize;
 }
 
-.footer-bottom span{
+.footer-bottom span {
     text-transform: uppercase;
     opacity: 0.4;
     font-weight: 200;

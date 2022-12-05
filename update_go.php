@@ -1,58 +1,35 @@
+<!-- update_go.php by Su Yeoun -->
+
 <?php
-
-// $newPassword = $_REQUEST['newPassword'];
-
+// variables for database
 $host = "localhost";
 $dbname = "web_assignment_2";
 $username = "root";
 $password = "1234";
 
-
+// connection to database
 $conn = mysqli_connect($host, $username, $password, $dbname);
 
+// condition for connect error
 if (mysqli_connect_errno()) {
     die("Connection error: " . mysqli_connect_error());
 }
 
-
-
+// user update query 
 if (isset($_GET['updateid'])) {
-    $user=$_GET['updateid'];
-    
-    $sql = "update signup set password = 'Ab1234' where username = $user";
+    $user = $_GET['updateid'];
 
+    $sql = "update signup set password = 'Ab1234' where username = $user";
     $result = mysqli_query($conn, $sql);
-    // echo "<script> alert('updated OK'); </script>" ;
-    
-    if($result) {
+
+    if ($result) {
         // header("Location: update_real.php" );
         // echo '<script> alert ("message successfully sent") </script>';
-        
+
     } else {
         die(mysqli_error($conn));
     }
 }
-
-
-
-
-// if (isset($_GET['updateid'])) {
-//     $user=$_GET['updateid'];
-    
-//     $sql = "update signup set password = 'newPassworddd' where username = $user";
-
-//     $result = mysqli_query($conn, $sql);
-//     echo "<script> alert('updated OK'); </script>" ;
-    
-//     if($result) {
-//         header("Location: update_real.php" );
-//         // echo '<script> alert ("message successfully sent") </script>';
-        
-//     } else {
-//         die(mysqli_error($conn));
-//     }
-// }
-
 
 ?>
 
@@ -68,7 +45,6 @@ if (isset($_GET['updateid'])) {
     <link rel="stylesheet" href="update.css">
     <script src="https://kit.fontawesome.com/6b90367316.js" crossorigin="anonymous"></script>
     <!-- <script src="/signup.js" crossorigin="anonymous"></script> -->
-
     <script src="upgradebuttin.js" defer></script>
     <script src="signup.js" defer></script>
 </head>
@@ -76,7 +52,6 @@ if (isset($_GET['updateid'])) {
 <body>
     <header>
         <a href="index.html" class="logo">Tutorium</a>
-
         <nav class="navbar">
             <ul>
                 <li><a href="/contact.html">Contact Us</a>
@@ -92,13 +67,10 @@ if (isset($_GET['updateid'])) {
                 <li><a href="/findTutors.html">Find tutors</a> </li>
                 <li><a href="/subject.html">Subjects</a></li>
             </ul>
-
         </nav>
-
-
         <input type="button" value="Login/Signup" class="log" id="logg">
-
     </header>
+
     <div class="container">
         <div class="form1">
             <!-- <div class="button">
@@ -115,12 +87,11 @@ if (isset($_GET['updateid'])) {
                     <img src="/Photos/Logo1.png" class="lo-im" alt="LOgo">
 
                 </form> -->
-            <!-- <?php echo $user . "<br> You can only change Password!" ?> -->
+            <?php echo "<p id='phpMsg'>" . "<span>" . $user ."😃 </span> <br>You can only change Password! </p>" ?>
+
 
             <form action="update_real.php" id="upgrade" class="form" method="POST" name="form" onsubmit="return checkInputs()">
-
-
-<!-- 
+                <!-- 
                 <div class="form-control">
 
                     <input type="email" placeholder="Email" class="sifi" id="email" name="email" readonly value="<?php echo $email ?>">
@@ -135,6 +106,7 @@ if (isset($_GET['updateid'])) {
                     <i class="fas fa-exclamation-circle"></i>
                     <small>Error message</small>
                 </div> -->
+              
                 <div class="form-control">
 
                     <input type="password" placeholder="New password" class="sifi" id="password" name="password1">
@@ -153,20 +125,14 @@ if (isset($_GET['updateid'])) {
                     <input type="checkbox" name="terms" id="terms">
                     <label for="terms">I agree to the terms and conditions</label>
                 </div> -->
-
-
-
                 <div class="buttonGrp">
                     <input type="submit" class="si-btn" value="update">
                     <!-- <button class="si-btn"><a href="update_real.php?updateid=<?php echo $user; ?>">Update</a></button> -->
-
             </form>
         </div>
-
-
-
         </form>
     </div>
+
     <footer>
         <div class="footer-content">
             <h3>Tutorium</h3>

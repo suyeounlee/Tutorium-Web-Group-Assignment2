@@ -1,3 +1,4 @@
+<!-- subject.html by Mathunan -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,55 +13,45 @@
 </head>
 
 <body>
+    <!-- Logo and nav bar menu -->
     <header>
         <a href="index.html" class="logo">Tutorium</a>
-        <header>
-            <a href="index.html" class="logo">Tutorium</a>
-            
-            <nav class="navbar">
-                <ul class="dep1">
-                    <li><a href="/contact.html">Contact Us</a> 
-                        <ul>
-                            <li><a href="q&a.html">Q&A</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="/aboutUs.html">About us</a> 
-                        <ul>
-                            <li><a href="/location.html" >Location</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="/findTutors.html">Find tutors</a> </li>
-                    <li><a href="/index.html">Home</a></li>
-                </ul>
-                
-            </nav>
-    
-            <div class="log" id="logg"><a href="login.html">Login | Sign-up</a></div>
-           <!--
-            <input type="button" value="Login/Signup" class="log" id="logg">
-            -->
-        </header>
-
-
+        <nav class="navbar">
+            <ul class="dep1">
+                <li><a href="/contact.html">Contact Us</a>
+                    <ul>
+                        <li><a href="q&a.html">Q&A</a></li>
+                    </ul>
+                </li>
+                <li><a href="/aboutUs.html">About us</a>
+                    <ul>
+                        <li><a href="/location.html">Location</a></li>
+                    </ul>
+                </li>
+                <li><a href="/findTutors.html">Find tutors</a> </li>
+                <li><a href="/index.html">Home</a></li>
+            </ul>
+        </nav>
         <div class="log" id="logg"><a href="login.html">Login | Sign-up</a></div>
-        
     </header>
-    
+    <div class="log" id="logg"><a href="login.html">Login | Sign-up</a></div>
+
     <h2>Courses</h2>
+
+    <!-- buttons for filter -->
     <div id="myBtnContainer">
         <button class="btn active" onclick="filterSelection('all')"> Show all</button>
         <button class="btn" onclick="filterSelection('language')"> Language</button>
         <button class="btn" onclick="filterSelection('appilication')"> Appilication</button>
         <button class="btn" onclick="filterSelection('software')"> Software</button>
-
-
     </div>
-    <br>
 
+
+    <!-- 15 courses information for filter -->
     <div class="container">
         <div class="box language">
             <div class="imgbox gridItem1">
-                <img src="Photos/c.jpg" alt=""><br>
+                <img src="Photos/c.jpg" alt="C_language"><br>
             </div>
             <div class="content c1">
                 <div>
@@ -239,6 +230,8 @@
             </div>
         </div>
     </div>
+
+    <!-- footer with tutorium company information -->
     <footer>
         <div class="footer-content">
             <h3>Tutorium</h3>
