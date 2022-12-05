@@ -1,11 +1,4 @@
-<<<<<<< HEAD
 <!-- contact.php by Leonardo -->
-=======
-<!-- PHP code for contact page (leonardo)
-In this code we store the passed values from contact page inside validation form.
-No return values expected, only information is stored in database for further consultation.
--->
->>>>>>> aba7e5eafb056a7472550739436fa6a59395e54c
 
 <?php
 // variables for the form
@@ -15,10 +8,7 @@ $email = $_POST['email'];
 $interest = $_POST['interest'];
 $message = $_POST['message'];
 
-<<<<<<< HEAD
 // variables for database
-=======
->>>>>>> aba7e5eafb056a7472550739436fa6a59395e54c
 $host = "localhost";
 $dbname = "web_assignment_2";
 $username = "root";
