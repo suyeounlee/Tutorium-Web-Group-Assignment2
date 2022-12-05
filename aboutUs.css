@@ -1,16 +1,14 @@
 /* aboutUs.css by Juho  */
 
-/* whole page */
+/* first container */
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* body container */
-body{
+body {
     width: 100%;
 }
 
-/* first container */
 #FirstCon {
     margin-left: 5%;
     margin-right: 40%;
@@ -57,12 +55,7 @@ span {
     font-weight: bold;
 }
 
-<<<<<<< HEAD
 .container {
-=======
-/* all container */
-.container{
->>>>>>> aba7e5eafb056a7472550739436fa6a59395e54c
     margin-left: 20%;
     margin-right: 20%;
 }
@@ -219,7 +212,6 @@ footer{
 }
  */
 
-<<<<<<< HEAD
 footer {
     background: linear-gradient(to right, #a8dadc, #457b9d);
     height: auto;
@@ -230,9 +222,6 @@ footer {
 }
 
 .footer-content {
-=======
-.footer-content{
->>>>>>> aba7e5eafb056a7472550739436fa6a59395e54c
     display: flex;
     align-items: center;
     justify-content: center;

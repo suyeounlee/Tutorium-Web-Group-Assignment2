@@ -1,24 +1,15 @@
-<<<<<<< HEAD
 /* contact.css by Leonardo */
 
 @import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@400;600;700&display=swap");
-=======
-/* CSS Contact Page (Leonardo)
-Code inside this file provides formatting for Contact and Q&A pages.
-*/
->>>>>>> aba7e5eafb056a7472550739436fa6a59395e54c
 
 body {
     background-color: rgba(255, 240, 242, 0);
     width: 100%;
 }
 
-<<<<<<< HEAD
 
 /* CSS Contact Page (Leonardo)*/
 
-=======
->>>>>>> aba7e5eafb056a7472550739436fa6a59395e54c
 #contact-main {
     width: 100%;
 }
@@ -34,12 +25,7 @@ body {
     }
 
     .flexbox-container {
-<<<<<<< HEAD
         flex-wrap: wrap;
-=======
-        display: grid;
-        grid-template-columns: auto;
->>>>>>> aba7e5eafb056a7472550739436fa6a59395e54c
     }
 
     .dep1 {
@@ -84,60 +70,6 @@ body {
         visibility: hidden;
     }
 
-<<<<<<< HEAD
-=======
-
-    #questions-container {
-        grid-template-columns: auto;
-    }
-
-    .dep1 {
-        visibility: visible;
-        display: grid;
-        grid-template-rows: 10% 5%;
-        grid-template-columns: 10% 10%;
-        row-gap: 13vw;
-        column-gap: 60vw;
-        background-color: transparent;
-        opacity: 0.5;
-        margin-right: 0;
-        width: 30px;
-        height: 5px;
-        justify-items: left;
-        align-content: flex-start;
-        text-align: left;
-        padding: 0;
-        font-size: 10px;
-        margin-top: 35px;
-    }
-
-    .dep1>li a {
-        background-color: rgb(187, 255, 240);
-        margin-right: 30px;
-        border-style: solid;
-        border-width: 1px;
-        border-color: rgb(78, 75, 75);
-        border-radius: 16px;
-        width: 100px;
-        height: 15px;
-        padding: 5px;
-    }
-
-    .hidden-p {
-        visibility: hidden;
-    }
-
-    .dep2>li a {
-        border-radius: 20px;
-        visibility: hidden;
-    }
-
-
-    header>.navbar>ul li ul {
-        visibility: hidden;
-    }
-
->>>>>>> aba7e5eafb056a7472550739436fa6a59395e54c
     #button-container {
         display: grid;
         grid-template-columns: 10% 10%;
@@ -154,10 +86,7 @@ body {
 
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> aba7e5eafb056a7472550739436fa6a59395e54c
 #contact-title {
     font-size: 1.5rem;
     text-align: center;
@@ -300,11 +229,7 @@ body {
     position: relative;
 }
 
-<<<<<<< HEAD
 hidden-p {
-=======
-.hidden-p {
->>>>>>> aba7e5eafb056a7472550739436fa6a59395e54c
     visibility: hidden;
 }
 
