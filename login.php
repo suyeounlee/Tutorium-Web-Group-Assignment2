@@ -43,33 +43,14 @@ mysqli_close($conn);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/script.js" defer></script>
     <title>Tutorium</title>
 </head>
 
 <body>
     <!-- Logo and nav bar menu -->
-    <header>
-        <a href="index.html" class="logo">Tutorium</a>
-        <nav class="navbar">
-            <ul class="dep1">
-                <li><a href="/contact.html">Contact Us</a>
-                    <ul class="dep2">
-                        <li><a href="q&a.html">Q&A</a></li>
-                    </ul>
-                </li>
-                <li><a href="/aboutUs.html">About us</a>
-                    <ul class="dep2">
-                        <li><a href="/location.html">Location</a></li>
-                    </ul>
-                </li>
-                <li><a href="findTutors.html">Find tutors</a> </li>
-                <li><a href="/subject.html">Subjects</a></li>
-            </ul>
-        </nav>
-        <div class="log" id="logg"><a href="login.html">Login | Sign-up</a></div>
-    </header>
+    <?php include("header.php"); ?>
 
     <!-- Main page image add -->
     <div class="headerimg">
@@ -116,19 +97,4 @@ mysqli_close($conn);
     </div>
 
     <!-- footer with tutorium company information -->
-    <footer>
-        <div class="footer-content">
-            <h3>Tutorium</h3>
-            <p>Tutorium | 1385 Woodroffe Ave, Nepean, ON <br>
-                CST8285-Web-Programming Group Assignment (Algonquin College) <br>
-            </p>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2022 Copyright. Designed by<span> Juho | Leonardo | Mathunan | Su Yeoun </span><br>
-            </p>
-        </div>
-    </footer>
-
-</body>
-
-</html>
+    <?php include("footer.php"); ?>

@@ -34,7 +34,6 @@ mysqli_stmt_bind_param($stmt, "sss", $email, $user, $password1);
 mysqli_stmt_execute($stmt);
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,10 +41,8 @@ mysqli_stmt_execute($stmt);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js" defer></script>
-
-
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/script.js" defer></script>
     <title>Tutorium</title>
 </head>
 
@@ -86,16 +83,14 @@ mysqli_stmt_execute($stmt);
         $query = "select * from signup where username='$user'";
         $result = mysqli_query($conn, $query);
         $row = mysqli_fetch_array($result);
-
         ?>
-
 
         <div class="log" id="logg"><a href="update.php">
                 <?php
                 echo "Welcome $row[1]";
                 ?>
             </a></div>
-        <a href="index.html"> <button id="logout"> Logout</button> </a>
+        <a href="index.php"> <button id="logout"> Logout</button> </a>
 
     </header>
     <div class="headerimg">
@@ -125,14 +120,14 @@ mysqli_stmt_execute($stmt);
         <div class="">
         </div>
         <div class="flexbox-siteMap1">
-            <strong><a href=aboutUs.html>About us</a></strong> <br>
+            <strong><a href=aboutUs.php>About us</a></strong> <br>
             Location
         </div>
         <div class="flexbox-siteMap2">
-            <strong><a href=subject.html> Subject </a></strong> <br>
+            <strong><a href=subject.php> Subject </a></strong> <br>
         </div>
         <div class="flexbox-siteMap3">
-            <strong> <a href=findTutors.html>Find Tutors </a> </strong> <br>
+            <strong> <a href=findTutors.php>Find Tutors </a> </strong> <br>
         </div>
         <div class="flexbox-siteMap4">
             <strong> <a href=contact.html> Contact</a></strong> <br>
@@ -142,19 +137,4 @@ mysqli_stmt_execute($stmt);
         </div>
     </div>
 
-    <footer>
-        <div class="footer-content">
-            <h3>Tutorium</h3>
-            <p>Tutorium | 1385 Woodroffe Ave, Nepean, ON <br>
-                CST8285-Web-Programming Group Assignment (Algonquin College) <br>
-            </p>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2022 Copyright. design by<span> Juho | Leonardo | Mathunan | Su Yeoun </span><br>
-            </p>
-        </div>
-    </footer>
-
-</body>
-
-</html>
+    <?php include("footer.php"); ?>

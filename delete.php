@@ -24,7 +24,7 @@ if (isset($_GET['deleteid'])) {
     echo "<script> alert('Deleted OK'); </script>";
 
     if ($result) {
-        header("Location: index.html");
+        header("Location: index.php");
         // echo '<script> alert ("message successfully sent") </script>';
 
     } else {

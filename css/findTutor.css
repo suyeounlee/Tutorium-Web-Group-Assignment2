@@ -1,0 +1,452 @@
+/* findTutor.css by Su Yeoun */
+
+* {
+    text-decoration: none;
+}
+
+body {
+    margin-top: 75px;
+}
+
+/* Main Page */
+
+@media only screen and (max-width: 800px) {
+    body {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .flexbox-container {
+        flex-wrap: wrap;
+    }
+
+    #searchDiv {
+        padding-top: 50px;
+        margin-right: 10px;
+        margin-left: 10px;
+        width: 100px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    .navbar {
+        visibility: visible;
+        display: grid;
+        grid-template-rows: 10% 5%;
+        grid-template-columns: 10% 10%;
+        row-gap: 13vw;
+        column-gap: 60vw;
+        background-color: transparent;
+        opacity: 0.5;
+        margin-right: 0;
+        width: 30px;
+        height: 5px;
+        justify-items: left;
+        align-content: flex-start;
+        text-align: left;
+        padding: 0;
+        font-size: 10px;
+        margin-top: 35px;
+    }
+
+    .dep1>li a {
+        background-color: rgb(187, 255, 240);
+        margin-right: 30px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(78, 75, 75);
+        border-radius: 16px;
+        width: 100px;
+        height: 15px;
+        padding: 5px;
+    }
+
+    .dep2>li a {
+        border-radius: 20px;
+        visibility: hidden;
+    }
+
+
+    header>.navbar>ul li ul {
+        visibility: hidden;
+    }
+
+
+    #div_button-hide_Site_Map {
+        margin-right: 60%;
+        margin-left: 10%;
+        padding-right: 18%;
+    }
+
+    footer {
+        max-width: 100%;
+    }
+
+    .footer-bottom {
+        max-width: fit-content;
+    }
+
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    /* box-shadow: 0 5px 10px rgba(0,0,0,.1); */
+    padding: 10px 5%;
+    align-items: center;
+    height: 75px;
+    justify-content: space-between;
+    z-index: 1000;
+
+}
+
+#log {
+    float: right;
+}
+
+#logg {
+    display: flex;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    border: none;
+    background-color: #0088a9;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 9px 25px;
+}
+
+li {
+    text-decoration: none;
+}
+
+
+header #logo {
+    font-weight: bolder;
+    font-size: 50px;
+    color: #333;
+    text-decoration: none;
+    background-color: #fff;
+
+}
+
+header #navbar ul {
+    list-style: none;
+    margin-bottom: -50px;
+    background-color: #fff;
+
+
+}
+
+header #navbar ul li {
+    position: relative;
+    margin-right: 50px;
+    top: 0;
+    text-decoration: none;
+    background-color: #fff;
+    float: right;
+}
+
+header #navbar ul li ul {
+    padding-left: 50px;
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background-color: #fff;
+    color: #333;
+    display: none;
+}
+
+header #navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+header #navbar ul li:hover>ul {
+    display: initial;
+
+}
+
+header #navbar ul li a {
+    font-size: 20px;
+    padding: 20px;
+    color: #333;
+    display: block;
+}
+
+header #navbar ul li a:hover {
+    background: #333;
+    color: #fff;
+}
+
+
+.flexbox-container {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    font-size: 28px;
+}
+
+img {
+    width: 300px;
+    height: 400px;
+}
+
+
+
+.flexbox-container-siteMap {
+    background-color: rgb(232, 232, 205);
+
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.flexbox-container-siteMap a {
+    color: black;
+}
+
+
+
+.flexbox-container-footer {
+    /* footer */
+
+    margin-bottom: 0px;
+    display: flex;
+    text-align: left;
+    font-size: 18px;
+    width: 100%;
+    font-family: sans-serif;
+    background-color: rgb(246, 246, 240);
+    line-height: 30px;
+    background-color: #1d3557;
+
+
+}
+
+.flexbox-footer1 {
+    /* footer - Tutorium */
+
+    padding-top: 20px;
+    margin-left: 60px;
+    width: 110px;
+    font-size: 30px;
+
+
+}
+
+.flexbox-footer1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.flexbox-footer2 {
+    /* footer-locationn */
+    margin-left: 350px;
+    font-size: 18px;
+    word-spacing: 2px;
+    background-color: #1d3557;
+}
+
+
+/* CSS for tutor list (Suyeon)*/
+
+.search {
+    /* search box */
+    display: inline;
+    float: left;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+
+}
+
+.flexbox-container-tutor {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    row-gap: 50px;
+    column-gap: 0px;
+    text-align: center;
+}
+
+/* .flexbox-item1 {
+ /* border: 1px solid black; 
+
+} */
+
+.flexbox-container-tutor img {
+    width: 250px;
+    height: 250px;
+
+}
+
+.flexbox-container-tutor>div {
+    display: block;
+}
+
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.search {
+    /* search box */
+    display: inline;
+    float: left;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+
+}
+
+#searchDiv {
+    padding-top: 200px;
+    margin: auto;
+    width: 50%;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+h3 {
+    font-size: 28px;
+    padding: 20px;
+}
+
+
+footer {
+    background: linear-gradient(to right, #a8dadc, #457b9d);
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #333;
+    border: none;
+
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 0 50px 0;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    margin: 0;
+
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 0;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    background: linear-gradient(to right, #1d3557, #457b9d);
+    width: 100vw;
+    padding: 20px;
+    text-align: center;
+    border: none;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: 0.4;
+    font-weight: 200;
+    color: antiquewhite;
+}
+
+footer {
+    background: linear-gradient(to right, #a8dadc, #457b9d);
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #333;
+    border: none;
+
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 0 50px 0;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    margin: 0;
+
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 0;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    background: linear-gradient(to right, #1d3557, #457b9d);
+    width: 100vw;
+    padding: 20px;
+    text-align: center;
+    border: none;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: 0.4;
+    font-weight: 200;
+    color: antiquewhite;
+}
