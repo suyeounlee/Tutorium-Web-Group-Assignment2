@@ -55,18 +55,11 @@ mysqli_close($conn);
 
         <nav class="navbar">
             <ul class="dep1">
-                <li><a href="/group/contact.php">Contact</a>
-                   
+                <li><a href="/group/contact.php">Contact</a> </li>
                         <li><a href="/group/q&a.php">Q&A</a></li>
-                  
-                </li>
                 <li><a href="/group/findTutors.php">Find tutors</a> </li>
                 <li><a href="/group/subject.php">Subjects</a></li>
-
-               
                         <li><a href="/group/location.php">Location</a></li>
-                
-                </li>
             </ul>
         </nav>
 
@@ -89,7 +82,7 @@ mysqli_close($conn);
 
         <div class="log" id="logg"><a href="update.php">
                 <?php
-                echo "Welcome $row[1]";
+                echo "Welcome $user";
                 ?>
             </a></div>
         <a href="index.php"> <button id="logout"> Logout</button> </a>

@@ -57,19 +57,12 @@ mysqli_close($conn);
 
         <nav class="navbar">
             <ul class="dep1">
-                <li><a href="/group/contact.php">Contact</a>
-               
-                        <li><a href="/group/q&a.php">Q&A</a></li>
-                 
-                </li>
+                <li><a href="/group/contact.php">Contact</a></li>
+                <li><a href="/group/q&a.php">Q&A</a></li>
                 <li><a href="/group/findTutors.php">Find tutors</a> </li>
                 <li><a href="/group/subject.php">Subjects</a></li>
-
-                <li><a href="/group/aboutUs.php">About us</a>
-                
-                        <li><a href="/group/location.php">Location</a></li>
-                
-                </li>
+                <li><a href="/group/aboutUs.php">About us</a></li>
+                <li><a href="/group/location.php">Location</a></li>
             </ul>
         </nav>
 
@@ -98,50 +91,5 @@ mysqli_close($conn);
         <a href="index.php"> <button id="logout"> Logout</button> </a>
 
     </header>
-
-<!--     
-    <div class="headerimg">
-        <img src="Photos/Ban.jpg" alt=""><br>
-    </div>
-
-    <div class="flexbox-container">
-        <div class="flexbox-item-1">
-            <img src="Photos/inperson.jpg">
-            <p>In-Person Tutoring</p>
-        </div>
-        <div class="flexbox-item-2">
-            <img src="Photos/onlinetutoring.jpg">
-            <p>Online Tutoring</p>
-        </div>
-        <div class="flexbox-item-3">
-            <img src="./Photos/studygroup.jpg">
-            <p>Sutdy Group</p>
-        </div>
-    </div>
-    </div>
-
-   Site Map show/ hide button (Testing)  
-    <input type="button" value="Hide Sitemap" id="site">
-    <br>
-    <div class="flexbox-container-siteMap">
-        <div class="">
-        </div>
-        <div class="flexbox-siteMap1">
-            <strong><a href=aboutUs.php>About us</a></strong> <br>
-            Location
-        </div>
-        <div class="flexbox-siteMap2">
-            <strong><a href=subject.php> Subject </a></strong> <br>
-        </div>
-        <div class="flexbox-siteMap3">
-            <strong> <a href=findTutors.php>Find Tutors </a> </strong> <br>
-        </div>
-        <div class="flexbox-siteMap4">
-            <strong> <a href=contact.html> Contact</a></strong> <br>
-            Q&A
-        </div>
-        <div class="">
-        </div>
-    </div>
 
   

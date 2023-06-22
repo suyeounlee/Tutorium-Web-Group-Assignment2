@@ -94,7 +94,6 @@ body {
 
 }
 
-
 .flexbox-container {
     margin-top: 80px;
     margin-bottom: 80px;
@@ -104,84 +103,8 @@ body {
     font-size: 28px;
 }
 
-img {
-    width: 300px;
-    height: 400px;
-}
-
-
-
-.flexbox-container-siteMap {
-    background-color: rgb(232, 232, 205);
-
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 10px;
-    line-height: 40px;
-    text-align: center;
-    font-size: 20px;
-
-}
-
-.flexbox-container-siteMap a {
-    color: black;
-}
-
-
-
-.flexbox-container-footer {
-    /* footer */
-
-    margin-bottom: 0px;
-    display: flex;
-    text-align: left;
-    font-size: 18px;
-    width: 100%;
-    font-family: sans-serif;
-    background-color: rgb(246, 246, 240);
-    line-height: 30px;
-    background-color: #1d3557;
-
-
-}
-
-.flexbox-footer1 {
-    /* footer - Tutorium */
-
-    padding-top: 20px;
-    margin-left: 60px;
-    width: 110px;
-    font-size: 30px;
-
-
-}
-
-.flexbox-footer1 a {
-    text-decoration: none;
-    color: black;
-}
-
-.flexbox-footer2 {
-    /* footer-locationn */
-    margin-left: 350px;
-    font-size: 18px;
-    word-spacing: 2px;
-    background-color: #1d3557;
-}
-
 
 /* CSS for tutor list (Suyeon)*/
-
-.search {
-    /* search box */
-    display: inline;
-    float: left;
-    padding-left: 100px;
-    padding-top: 50px;
-    padding-bottom: 10px;
-  
-}
-
 
 .flexbox-container-tutor {
     margin-top: 100px;
@@ -205,22 +128,6 @@ img {
     display: block;
 }
 
-
-img {
-    width: 100%;
-    height: 100%;
-}
-
-.search {
-    /* search box */
-    display: inline;
-    float: left;
-    padding-left: 100px;
-    padding-top: 50px;
-    padding-bottom: 10px;
-
-}
-
 #searchDiv {
     padding-top: 50px;
     margin: auto;
@@ -228,122 +135,4 @@ img {
     padding-left: 100px;
     padding-right: 100px;
 
-}
-
-h3 {
-    font-size: 28px;
-    padding: 20px;
-}
-
-
-footer {
-    background: linear-gradient(to right, #a8dadc, #457b9d);
-    height: auto;
-    width: 100vw;
-    padding-top: 40px;
-    color: #333;
-    border: none;
-
-}
-
-.footer-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 0 0 50px 0;
-}
-
-.footer-content h3 {
-    font-size: 1.8rem;
-    font-weight: 400;
-    text-transform: capitalize;
-    line-height: 3rem;
-    margin: 0;
-
-}
-
-.footer-content p {
-    max-width: 500px;
-    margin: 0;
-    line-height: 28px;
-    font-size: 14px;
-}
-
-.footer-bottom {
-    background: linear-gradient(to right, #1d3557, #457b9d);
-    width: 100vw;
-    padding: 20px;
-    text-align: center;
-    border: none;
-}
-
-.footer-bottom p {
-    font-size: 14px;
-    word-spacing: 2px;
-    text-transform: capitalize;
-}
-
-.footer-bottom span {
-    text-transform: uppercase;
-    opacity: 0.4;
-    font-weight: 200;
-    color: antiquewhite;
-}
-
-footer {
-    background: linear-gradient(to right, #a8dadc, #457b9d);
-    height: auto;
-    width: 100vw;
-    padding-top: 40px;
-    color: #333;
-    border: none;
-
-}
-
-.footer-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 0 0 50px 0;
-}
-
-.footer-content h3 {
-    font-size: 1.8rem;
-    font-weight: 400;
-    text-transform: capitalize;
-    line-height: 3rem;
-    margin: 0;
-
-}
-
-.footer-content p {
-    max-width: 500px;
-    margin: 0;
-    line-height: 28px;
-    font-size: 14px;
-}
-
-.footer-bottom {
-    background: linear-gradient(to right, #1d3557, #457b9d);
-    width: 100vw;
-    padding: 20px;
-    text-align: center;
-    border: none;
-}
-
-.footer-bottom p {
-    font-size: 14px;
-    word-spacing: 2px;
-    text-transform: capitalize;
-}
-
-.footer-bottom span {
-    text-transform: uppercase;
-    opacity: 0.4;
-    font-weight: 200;
-    color: antiquewhite;
 }

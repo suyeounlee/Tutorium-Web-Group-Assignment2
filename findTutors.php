@@ -1,42 +1,36 @@
 <!-- findTutors.html by Su Yeoun -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/findTutor.css">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"> -->
-   
     <script src="js/findTutor.js" defer></script>
 
-
     <style>
-    #searchDiv {
-        padding-top:70px;
-    }
-
-    #findOption {
-        height: 25px;
-        width: 80px;
-    }
-
-    #searchBox {
-        height: 20px;
-        width: 170px;
-    }
-
-</style>
+        #searchDiv {
+            padding-top: 70px;
+        }
+        #findOption {
+            height: 25px;
+            width: 80px;
+        }
+        #searchBox {
+            height: 20px;
+            width: 170px;
+        }
+    </style>
 
     <title>Tutorium</title>
 </head>
 
 <body>
- <?php include("header.php"); ?>
-
-   
+    <?php include("header.php"); ?>
     <div class="input-group mb-3 w-50" class="search" id="searchDiv">
         <select id="findOption" onchange="getSelectValue();">
             <option class="option" value="name">Name</option>
@@ -113,5 +107,4 @@
     </footer>
 
 </body>
-
 </html>

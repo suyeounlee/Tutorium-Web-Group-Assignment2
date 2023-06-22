@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<?php include("header.php"); ?>
+    <?php include("header.php"); ?>
 
     <section id="qa-section">
         <div id="qa-container">

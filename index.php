@@ -45,7 +45,7 @@
     <div class="flexbox-container-siteMap">
         <div class="flexbox-siteMap1">
             <strong><a href=/group/aboutUs.php>About us</a></strong> <br>
-            <a href=/group/location.php>Location</a> 
+            <a href=/group/location.php>Location</a>
         </div>
         <div class="flexbox-siteMap2">
             <strong><a href=/group/subject.php> Subject </a></strong> <br>
@@ -55,7 +55,7 @@
         </div>
         <div class="flexbox-siteMap4">
             <strong> <a href=/group/contact.html> Contact</a></strong> <br>
-            <a href=/group/q&a.php>Q&A</a> 
+            <a href=/group/q&a.php>Q&A</a>
         </div>
     </div>
 

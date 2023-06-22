@@ -25,7 +25,6 @@
         <button class="btn" onclick="filterSelection('software')"> Software</button>
     </div>
 
-
     <!-- 15 courses information for filter -->
     <div class="container">
 
