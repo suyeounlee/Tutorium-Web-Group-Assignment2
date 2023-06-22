@@ -5,12 +5,10 @@
 
     <nav class="navbar">
         <ul class="dep1">
+        <li><a href="/group/contact.php">Contact Us</a></li>
+            <li><a href="/group/q&a.php">Q&A</a></li>
         <li><a href="/group/subject.php">Subjects</a></li>
         <li><a href="/group/findTutors.php">Find tutors</a> </li>
-            <li><a href="/group/contact.php">Contact Us</a>
-            </li>
-            <li><a href="/group/q&a.php">Q&A</a>
-            </li>
             <li><a href="/group/aboutUs.php">About us</a>
             </li>
             <li><a href="/group/location.php">Location</a>
