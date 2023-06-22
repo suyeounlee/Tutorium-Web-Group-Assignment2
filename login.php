@@ -51,32 +51,21 @@ mysqli_close($conn);
 
 <body>
     <header>
-
-    <div class="log" id="logg"><a href="update.php">
-                <?php
-                echo "Welcome $row[1]";
-                ?>
-            </a>  </div>
-      <a href="index.php"> <button id="logout"> Logout</button> </a>
-
-     
-        
         <a href="index.php" class="logo">Tutorium</a>
 
         <nav class="navbar">
             <ul class="dep1">
                 <li><a href="/group/contact.php">Contact</a>
-                    <ul class="dep2">
+                   
                         <li><a href="/group/q&a.php">Q&A</a></li>
-                    </ul>
+                  
                 </li>
                 <li><a href="/group/findTutors.php">Find tutors</a> </li>
                 <li><a href="/group/subject.php">Subjects</a></li>
 
-                <li><a href="/group/aboutUs.php">About us</a>
-                    <ul class="dep2">
+               
                         <li><a href="/group/location.php">Location</a></li>
-                    </ul>
+                
                 </li>
             </ul>
         </nav>
@@ -98,7 +87,13 @@ mysqli_close($conn);
         $row = mysqli_fetch_array($result);
         ?>
 
-     
+        <div class="log" id="logg"><a href="update.php">
+                <?php
+                echo "Welcome $row[1]";
+                ?>
+            </a></div>
+        <a href="index.php"> <button id="logout"> Logout</button> </a>
 
     </header>
-  
+
+   

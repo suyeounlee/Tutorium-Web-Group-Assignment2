@@ -46,15 +46,64 @@ if (isset($_GET['updateid'])) {
     <!-- <script src="/signup.js" crossorigin="anonymous"></script> -->
 
     <script src="js/signup.js" defer></script>
+
+    <style>
+    .lo-im {
+    padding-left: 55px;
+  padding-top: 10px;
+    text-align:center;
+    margin-top: 0;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./Photos/Bgimg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+    </style>
 </head>
 
+
 <body>
-    <?php include("header.php"); ?>
+
+<header>
+        <a href="index.php" class="logo">Tutorium</a>
+
+        <nav class="navbar">
+            <ul class="dep1">
+                <li><a href="/group/contact.php">Contact</a>
+                   
+                        <li><a href="/group/q&a.php">Q&A</a></li>
+                  
+                </li>
+                <li><a href="/group/findTutors.php">Find tutors</a> </li>
+                <li><a href="/group/subject.php">Subjects</a></li>
+
+               
+                        <li><a href="/group/location.php">Location</a></li>
+                
+                </li>
+            </ul>
+        </nav>
+
+
+        <div class="log" id="logg"><a href="update.php">
+                <?php
+                echo "Welcome $user";
+                ?>
+            </a></div>
+        <a href="index.php"> <button id="logout"> Logout</button> </a>
+
+    </header>
 
     <div class="container">
         <div class="form1">
 
-            <?php echo "<p id='phpMsg'>" . "<span>" . $user . "😃 </span> <br>You can only change Password! </p>" ?>
+            <?php echo "<p id='phpMsg'>" . "<span>" . $user . "😃 </span> <br>Please enter your new password! </p>" ?>
 
 
             <form action="/group/update_real.php" id="upgrade" class="form" method="POST" name="form" onsubmit="return checkInputs()">
@@ -77,8 +126,8 @@ if (isset($_GET['updateid'])) {
                 <div class="buttonGrp">
                     <input type="submit" class="si-btn" value="update">
                     <!-- <button class="si-btn"><a href="update_real.php?updateid=<?php echo $user; ?>">Update</a></button> -->
-            </form>
-        </div>
+                 </div>
+                 <img src="./Photos/Logo1.png" class="lo-im" alt="Logo">
         </form>
     </div>
     <?php include("footer.php"); ?>

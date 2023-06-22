@@ -8,10 +8,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login/Signup</title>
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://kit.fontawesome.com/6b90367316.js" crossorigin="anonymous"></script>
 
     <script src="js/button.js" defer></script>
     <script src="js/signup.js" defer></script>
+
+    <style>
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    /* box-shadow: 0 5px 10px rgba(0,0,0,.1); */
+    padding: 15px 5%;
+    align-items: center;
+    height: 85px;
+    /* justify-content: space-between; */
+    z-index: 1000;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}header .navbar ul li {
+    position: relative;
+    margin-right: 90px;
+    top: 0;
+    text-decoration: none;
+    background-color: #fff;
+    float: right;
+    text-align: center;
+}
+    </style>
 </head>
 
 <body>
@@ -20,19 +58,12 @@
         <a href="/group/index.php" class="logo">Tutorium</a>
         <nav class="navbar">
             <ul>
-                <li><a href="/group/contact.php">Contact Us</a>
-                    <ul>
+                <li><a href="/group/contact.php">Contact Us</a>    </li>
                         <li><a href="/">Q&A</a></li>
-                    </ul>
-                </li>
                 <li><a href="/group/findTutors.php">Find tutors</a> </li>
                 <li><a href="/group/subject.php">Subjects</a></li>
-                <li><a href="/group/aboutUs.php">About us</a>
-                    <ul>
+                <li><a href="/group/aboutUs.php">About us</a>    </li>
                         <li><a href="/group/location.php">Location</a></li>
-                    </ul>
-                </li>
-                <li><a href="/group/index.php">Home</a></li>
             </ul>
         </nav>
         <div class="log" id="logg"><a href="/group/login.php">Login | Sign-up</a></div>

@@ -57,18 +57,18 @@ mysqli_close($conn);
 
         <nav class="navbar">
             <ul class="dep1">
-                <li><a href="/contact.html">Contact</a>
-                    <ul class="dep2">
-                        <li><a href="q&a.html">Q&A</a></li>
-                    </ul>
+                <li><a href="/group/contact.php">Contact</a>
+               
+                        <li><a href="/group/q&a.php">Q&A</a></li>
+                 
                 </li>
-                <li><a href="findTutors.html">Find tutors</a> </li>
-                <li><a href="/subject.html">Subjects</a></li>
+                <li><a href="/group/findTutors.php">Find tutors</a> </li>
+                <li><a href="/group/subject.php">Subjects</a></li>
 
-                <li><a href="/aboutUs.html">About us</a>
-                    <ul class="dep2">
-                        <li><a href="/location.html">Location</a></li>
-                    </ul>
+                <li><a href="/group/aboutUs.php">About us</a>
+                
+                        <li><a href="/group/location.php">Location</a></li>
+                
                 </li>
             </ul>
         </nav>

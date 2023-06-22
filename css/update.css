@@ -5,16 +5,19 @@
     padding: 0;
     font-family: sans-serif;
     text-decoration: none;
+
 }
 
 body {
     margin-top: 50px;
+
 }
+
 
 .container {
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/Photos/Bgimg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./Photos/Bgimg.jpg);
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -35,13 +38,6 @@ body {
     padding: 30px 40px;
 }
 
-.button {
-    width: 220px;
-    margin: 35px auto;
-    position: relative;
-    box-shadow: 0 0 20px 9px #ff61241f;
-    border-radius: 30px;
-}
 
 #signup {
     top: 100px;
@@ -154,33 +150,34 @@ table {
 
 
 }
-
 .si-btn {
-
-    /* display: block;
-    outline: 0;
+    font-size: 20px;
+    margin: auto;
+    padding: 5px;
+    color: #ffffff; /* White text color */
     cursor: pointer;
-    padding: 5px 16px;
-    margin: 50px 103px;
-    font-size: 14px;
     font-weight: 500;
     line-height: 20px;
     vertical-align: middle;
     border: 1px solid;
     border-radius: 6px;
-    color: #ffffff;
     background-color: #457b9d;
     border-color: #1b1f2326;
     box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
     transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
-    transition-property: color, background-color, border-color; */
 }
 
 .si-btn:hover {
-    background-color: #1d3557;
+    text-decoration: none;
+    background-color: rgb(197, 197, 197);
     border-color: #1b1f2326;
     transition-duration: 0.1s;
 }
+
+.si-btn :visited {
+   color: white;
+}
+
 
 
 .re-btn {
@@ -189,7 +186,7 @@ table {
     right: 15px;
     cursor: pointer;
     display: block;
-    background: linear-gradient(to right, #ff105f, #ffad06);
+    background: linear-gradient(to right, #83757a, #ffad06);
     border: 0;
     outline: none;
 
@@ -209,8 +206,9 @@ table {
 
 
 .form-control {
+
     margin-bottom: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     position: relative;
 }
 
@@ -279,13 +277,6 @@ table {
 
 
 
-
-
-
-
-
-
-
 nav {
     margin: 0;
     padding: 0;
@@ -303,7 +294,7 @@ header {
     box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
     padding: 10px 5%;
     align-items: center;
-    height: 75px;
+    height: 85px;
     justify-content: space-between;
     z-index: 1000;
 
@@ -448,6 +439,8 @@ footer {
 .buttonGrp {
     margin-left: 80px;
     padding-left: 30px;
+    display:flex;
+    gap: 20px;
 }
 
 #phpMsg {
@@ -461,3 +454,85 @@ span {
     color: blue;
     font-weight: bold;
 }
+
+
+.log {
+    float: right;
+}
+
+#logg {
+    display: flex;
+    position: absolute;
+    right: 90px;
+    top: 5px;
+    border: none;
+    background-color: #cce7ef;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 9px 25px;
+    text-decoration: none;
+    color: black;
+}
+
+#logg>a {
+    text-decoration: none;
+    color: rgb(68, 76, 219);
+    font-weight: bold;
+}
+
+
+#logout {
+    right: 6px;
+    top: 8px;
+    display: flex;
+    position: absolute;
+ 
+    font-size: 15px;
+    width: 80px;
+    height: 30px;
+    padding-top: 3px;
+    padding-left: 10px;
+    background-color: #c3d2db;
+    border-radius: 10px;
+    border: solid 2px lightslategrey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+
+}
+
+#logout:hover {
+    background-color: lightblue;
+    color: lightcoral;
+}
+
+
+header .navbar ul {
+    list-style: none;
+    margin-bottom: -25px;
+    background-color: #fff;
+}
+
+header .navbar ul li {
+    position: relative;
+    margin-right: 90px;
+    top: 0;
+    text-decoration: none;
+    background-color: #fff;
+    float: right;
+    text-align: center;
+}
+
+
+header .navbar ul li a {
+    font-size: 20px;
+    padding: 0px;
+    color: #333;
+    display: block;
+}
+
+.dep1>li>a:hover {
+    background: #333;
+    color: #fff;
+}
+
+
