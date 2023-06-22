@@ -12,43 +12,38 @@
    
     <script src="js/findTutor.js" defer></script>
 
+
+    <style>
+    #searchDiv {
+        padding-top:70px;
+    }
+
+    #findOption {
+        height: 25px;
+        width: 80px;
+    }
+
+    #searchBox {
+        height: 20px;
+        width: 170px;
+    }
+
+</style>
+
     <title>Tutorium</title>
 </head>
 
 <body>
  <?php include("header.php"); ?>
-  <!--  Logo and nav bar menu -->
-    <!-- <header>
-    <a href="index.php" class="logo">Tutorium</a>
 
-    <nav class="navbar">
-        <ul class="dep1">
-        <li><a href="/subject.php">Subjects</a></li>
-        <li><a href="findTutors.php">Find tutors</a> </li>
-            <li><a href="/contact.html">Contact Us</a>
-            </li>
-            <li><a href="q&a.php">Q&A</a>
-            </li>
-            <li><a href="/aboutUs.php">About us</a>
-            </li>
-            <li><a href="/location.php">Location</a>
-            </li>
-        </ul>
-    </nav>
-    <div class="log" id="logg"><a href="login.html">Login | Sign-up</a></div>
-</header>
-
-    <!-- search bar  to find tutors using bootstrap-->
-    <div>
-
-    </div>
+   
     <div class="input-group mb-3 w-50" class="search" id="searchDiv">
-        <select class="form-control w-10" id="findOption" onchange="getSelectValue();">
+        <select id="findOption" onchange="getSelectValue();">
             <option class="option" value="name">Name</option>
             <option class="option" value="subject">Subject</option>
         </select>
 
-        <input class="form-control w-50" type="text" id="searchBox" placeholder="Search...">
+        <input type="text" id="searchBox" placeholder="Search...">
         <!-- <button id="searchButton" class="btn btn-primary btn-md"><i class="bi bi-search"></i></button> -->
     </div>
 
