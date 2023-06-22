@@ -42,6 +42,7 @@ if (isset($_GET['updateid'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login/Signup</title>
     <link rel="stylesheet" href="css/update.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://kit.fontawesome.com/6b90367316.js" crossorigin="anonymous"></script>
     <!-- <script src="/signup.js" crossorigin="anonymous"></script> -->
 

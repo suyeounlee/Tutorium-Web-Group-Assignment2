@@ -67,11 +67,6 @@ body {
         padding: 5px;
     }
 
-    .dep2>li a {
-        border-radius: 20px;
-        visibility: hidden;
-    }
-
 
     header>.navbar>ul li ul {
         visibility: hidden;

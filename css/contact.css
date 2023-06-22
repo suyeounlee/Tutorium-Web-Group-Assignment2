@@ -60,11 +60,7 @@ body {
         padding: 5px;
     }
 
-    .dep2>li a {
-        border-radius: 20px;
-        visibility: hidden;
-    }
-
+ 
 
     header>.navbar>ul li ul {
         visibility: hidden;
@@ -268,112 +264,4 @@ hidden-p {
         opacity: 1;
         text-shadow: 2px 2px 20px;
     }
-}
-
-footer {
-    background: linear-gradient(to right, #a8dadc, #457b9d);
-    height: auto;
-    width: 100vw;
-    padding-top: 40px;
-    color: #333;
-    border: none;
-}
-
-.footer-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 0 0 50px 0;
-}
-
-.footer-content>h3 {
-    font-size: 100px;
-    font-weight: 400;
-    text-transform: capitalize;
-    line-height: 3rem;
-    margin: 0;
-}
-
-.footer-content>p {
-    max-width: 500px;
-    margin: 0;
-    line-height: 28px;
-    font-size: 2rem;
-}
-
-.footer-bottom {
-    background: linear-gradient(to right, #1d3557, #457b9d);
-    padding: 20px;
-    text-align: center;
-    border: none;
-}
-
-.footer-bottom p {
-    font-size: 30px;
-    word-spacing: 2px;
-    text-transform: capitalize;
-}
-
-.footer-bottom span {
-    text-transform: uppercase;
-    opacity: 0.4;
-    font-weight: 200;
-    color: antiquewhite;
-}
-
-footer {
-    background: linear-gradient(to right, #a8dadc, #457b9d);
-    height: auto;
-    width: 100%;
-    padding-top: 40px;
-    color: #333;
-    border: none;
-
-}
-
-.footer-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 0 0 50px 0;
-}
-
-.footer-content h3 {
-    font-size: 1.8rem;
-    font-weight: 400;
-    text-transform: capitalize;
-    line-height: 3rem;
-    margin: 0;
-}
-
-.footer-content p {
-    max-width: 500px;
-    margin: 0;
-    line-height: 28px;
-    font-size: 14px;
-}
-
-.footer-bottom {
-    background: linear-gradient(to right, #1d3557, #457b9d);
-    /* width: 100%; */
-    padding: 20px;
-    text-align: center;
-    border: none;
-}
-
-.footer-bottom p {
-    font-size: 14px;
-    word-spacing: 2px;
-    text-transform: capitalize;
-}
-
-.footer-bottom span {
-    text-transform: uppercase;
-    opacity: 0.4;
-    font-weight: 200;
-    color: antiquewhite;
 }
