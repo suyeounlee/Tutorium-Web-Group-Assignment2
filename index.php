@@ -27,7 +27,7 @@
             <p>In-Person Tutoring</p>
         </div>
         <div class="flexbox-item-2">
-            <img src="Photos/onlinetutoring.jpg">
+            <img src="./Photos/onlinetutoring.jpg">
             <p>Online Tutoring</p>
         </div>
         <div class="flexbox-item-3">
@@ -44,18 +44,18 @@
     <!-- for Sitemap display  -->
     <div class="flexbox-container-siteMap">
         <div class="flexbox-siteMap1">
-            <strong><a href=aboutUs.php>About us</a></strong> <br>
-            <a href=location.php>Location</a> 
+            <strong><a href=/group/aboutUs.php>About us</a></strong> <br>
+            <a href=/group/location.php>Location</a> 
         </div>
         <div class="flexbox-siteMap2">
-            <strong><a href=subject.php> Subject </a></strong> <br>
+            <strong><a href=/group/subject.php> Subject </a></strong> <br>
         </div>
         <div class="flexbox-siteMap3">
-            <strong> <a href=findTutors.html>Find Tutors </a> </strong> <br>
+            <strong> <a href=/group/findTutors.html>Find Tutors </a> </strong> <br>
         </div>
         <div class="flexbox-siteMap4">
-            <strong> <a href=contact.html> Contact</a></strong> <br>
-            <a href=q&a.php>Q&A</a> 
+            <strong> <a href=/group/contact.html> Contact</a></strong> <br>
+            <a href=/group/q&a.php>Q&A</a> 
         </div>
     </div>
 

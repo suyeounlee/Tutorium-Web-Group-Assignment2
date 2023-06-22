@@ -2,32 +2,32 @@
 
 <?php
 // variables for database
-$user = ['username'];
-$pword = ['password'];
+$user = $_POST['username'];
+$pword = $_POST['password'];
 $host = "localhost";
 $dbname = "web_assignment_2";
 $username = "root";
-$password = "1234";
+$password = "dkfrhdznls1234";
 
 // connection to database
 $conn = mysqli_connect($host, $username, $password, $dbname);
 
 // condition for connect
-$db = mysqli_select_db($conn, "web_assignment_2")
-    or die("Connection Fails");
+$db = mysqli_select_db($conn, "web_assignment_2") or die("Connection Fails");
 
 //starts the server validation
-$query = "select * from signup where username='$username'";
+$query = "select * from signup where username='$user'";
 
 if ($result = mysqli_query($conn, $query)) {
     if (!($row = mysqli_fetch_array($result))) {
         echo "<script> alert('Invalid userName. Please try again.'); </script>";
     } else {
-        $passwd = $row[3];
+        $passwd = $row['password'];
         if ($passwd == $pword) {
-            include 'index.php';
+            echo "<script> alert('login success'); </script>";
+            include "index.php";
         } else {
-            echo "Incorrect Password<br><a href ='Login.html'>CLICK HERE</a></i>";
+            echo "<script> alert('Incorrect Password'); </script>";
         }
     }
 } else
@@ -35,6 +35,7 @@ if ($result = mysqli_query($conn, $query)) {
 mysqli_close($conn);
 
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -49,52 +50,55 @@ mysqli_close($conn);
 </head>
 
 <body>
-    <!-- Logo and nav bar menu -->
-    <?php include("header.php"); ?>
+    <header>
 
-    <!-- Main page image add -->
-    <div class="headerimg">
-        <img src="Photos/Ban.jpg" alt="mainImage">
-    </div>
+    <div class="log" id="logg"><a href="update.php">
+                <?php
+                echo "Welcome $row[1]";
+                ?>
+            </a>  </div>
+      <a href="index.php"> <button id="logout"> Logout</button> </a>
 
-    <!-- 3 flexboxes for with images -->
-    <div class="flexbox-container">
-        <div class="flexbox-item-1">
-            <img src="Photos/inperson.jpg">
-            <p>In-Person Tutoring</p>
-        </div>
-        <div class="flexbox-item-2">
-            <img src="Photos/onlinetutoring.jpg">
-            <p>Online Tutoring</p>
-        </div>
-        <div class="flexbox-item-3">
-            <img src="./Photos/studygroup.jpg">
-            <p>Study Group</p>
-        </div>
-    </div>
+     
+        
+        <a href="index.php" class="logo">Tutorium</a>
 
-    <!-- SiteMap show/ hide button  -->
-    <div id="div_button-hide_Site_Map">
-        <input type="button" value="Hide Sitemap" id="site">
-    </div>
+        <nav class="navbar">
+            <ul class="dep1">
+                <li><a href="/group/contact.php">Contact</a>
+                    <ul class="dep2">
+                        <li><a href="/group/q&a.php">Q&A</a></li>
+                    </ul>
+                </li>
+                <li><a href="/group/findTutors.php">Find tutors</a> </li>
+                <li><a href="/group/subject.php">Subjects</a></li>
 
-    <!-- for Sitemap display  -->
-    <div class="flexbox-container-siteMap">
-        <div class="flexbox-siteMap1">
-            <strong><a href=aboutUs.html>About us</a></strong> <br>
-            Location
-        </div>
-        <div class="flexbox-siteMap2">
-            <strong><a href=subject.html> Subject </a></strong> <br>
-        </div>
-        <div class="flexbox-siteMap3">
-            <strong> <a href=findTutors.html>Find Tutors </a> </strong> <br>
-        </div>
-        <div class="flexbox-siteMap4">
-            <strong> <a href=contact.html> Contact</a></strong> <br>
-            Q&A
-        </div>
-    </div>
+                <li><a href="/group/aboutUs.php">About us</a>
+                    <ul class="dep2">
+                        <li><a href="/group/location.php">Location</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
 
-    <!-- footer with tutorium company information -->
-    <?php include("footer.php"); ?>
+        <?php
+     $user = $_POST['username'];
+     $pword = $_POST['password'];
+
+        $host = "localhost";
+        $dbname = "web_assignment_2";
+        $username = "root";
+        $password = "dkfrhdznls1234";
+
+        $conn = mysqli_connect($host, $username, $password, $dbname);
+
+        //starts the server validation
+        $query = "select * from signup where username='$user'";
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_array($result);
+        ?>
+
+     
+
+    </header>
+  

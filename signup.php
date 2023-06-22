@@ -1,6 +1,4 @@
-<!-- signup.php by Juho -->
 <?php
-
 //variables for signup form
 $email = $_POST['email'];
 $user = $_POST['username'];
@@ -10,8 +8,7 @@ $password1 = $_POST['password1'];
 $host = "localhost";
 $dbname = "web_assignment_2";
 $username = "root";
-$password = "1234";
-
+$password = "dkfrhdznls1234";
 
 // connection to database
 $conn = mysqli_connect($host, $username, $password, $dbname);
@@ -22,16 +19,24 @@ if (mysqli_connect_errno()) {
 }
 
 // sql insert query for signup table
-$sql = "INSERT INTO signup (email, username, password) values (?, ?, ?)";
+$sql = "INSERT INTO signup (email, username, password) VALUES (?, ?, ?)";
 
 $stmt = mysqli_stmt_init($conn);
 
 if (!mysqli_stmt_prepare($stmt, $sql)) {
-    die(mysqli_errno($conn));
+    die(mysqli_error($conn));
 }
 mysqli_stmt_bind_param($stmt, "sss", $email, $user, $password1);
 
-mysqli_stmt_execute($stmt);
+if (mysqli_stmt_execute($stmt)) {
+    echo "<script> alert('signup success'); </script>";
+    include "index.php";
+} else {
+    echo "Error: " . mysqli_error($conn);
+}
+
+mysqli_stmt_close($stmt);
+mysqli_close($conn);
 ?>
 
 <!DOCTYPE html>
@@ -48,7 +53,7 @@ mysqli_stmt_execute($stmt);
 
 <body>
     <header>
-        <a href="index.html" class="logo">Tutorium</a>
+        <a href="index.php" class="logo">Tutorium</a>
 
         <nav class="navbar">
             <ul class="dep1">
@@ -75,7 +80,7 @@ mysqli_stmt_execute($stmt);
         $host = "localhost";
         $dbname = "web_assignment_2";
         $username = "root";
-        $password = "1234";
+        $password = "dkfrhdznls1234";
 
         $conn = mysqli_connect($host, $username, $password, $dbname);
 
@@ -93,6 +98,8 @@ mysqli_stmt_execute($stmt);
         <a href="index.php"> <button id="logout"> Logout</button> </a>
 
     </header>
+
+<!--     
     <div class="headerimg">
         <img src="Photos/Ban.jpg" alt=""><br>
     </div>
@@ -113,7 +120,7 @@ mysqli_stmt_execute($stmt);
     </div>
     </div>
 
-    <!-- Site Map show/ hide button (Testing)  -->
+   Site Map show/ hide button (Testing)  
     <input type="button" value="Hide Sitemap" id="site">
     <br>
     <div class="flexbox-container-siteMap">
@@ -137,4 +144,4 @@ mysqli_stmt_execute($stmt);
         </div>
     </div>
 
-    <?php include("footer.php"); ?>
+  

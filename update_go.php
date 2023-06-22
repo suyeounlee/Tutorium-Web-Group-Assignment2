@@ -5,7 +5,7 @@
 $host = "localhost";
 $dbname = "web_assignment_2";
 $username = "root";
-$password = "1234";
+$password = "dkfrhdznls1234";
 
 // connection to database
 $conn = mysqli_connect($host, $username, $password, $dbname);
@@ -57,7 +57,7 @@ if (isset($_GET['updateid'])) {
             <?php echo "<p id='phpMsg'>" . "<span>" . $user . "😃 </span> <br>You can only change Password! </p>" ?>
 
 
-            <form action="update_real.php" id="upgrade" class="form" method="POST" name="form" onsubmit="return checkInputs()">
+            <form action="/group/update_real.php" id="upgrade" class="form" method="POST" name="form" onsubmit="return checkInputs()">
 
                 <div class="form-control">
 

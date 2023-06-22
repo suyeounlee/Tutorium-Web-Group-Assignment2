@@ -4,7 +4,7 @@
 $host = "localhost";
 $dbname = "web_assignment_2";
 $username = "root";
-$password = "1234";
+$password = "dkfrhdznls1234";
 
 // connection to database
 $conn = mysqli_connect($host, $username, $password, $dbname);

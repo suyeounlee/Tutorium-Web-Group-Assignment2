@@ -9,6 +9,7 @@ body {
     width: 100%;
 }
 
+
 #FirstCon {
     margin-left: 5%;
     margin-right: 40%;
@@ -212,7 +213,7 @@ footer{
 }
  */
 
-footer {
+/* footer {
     background: linear-gradient(to right, #a8dadc, #457b9d);
     height: auto;
     width: 100vw;
@@ -302,7 +303,7 @@ footer {
 .footer-bottom {
     background: linear-gradient(to right, #1d3557, #457b9d);
     /* width: 100%; */
-    padding: 20px;
+    /* padding: 20px;
     text-align: center;
     border: none;
 }
@@ -318,4 +319,4 @@ footer {
     opacity: 0.4;
     font-weight: 200;
     color: antiquewhite;
-}
+} */ 
