@@ -1,5 +1,5 @@
 # Web-Programming Group Assignment2
-I created it using JavaScript, PHP, HTML, and CSS with three groupmates during the web programming course (Level 2) in November 2022, and I continuously modified the code whenever I had time.
+I created it using JavaScript, PHP, HTML, and CSS with three groupmates during the web programming course (Level 2) in November 2022, and I continuously modified the code whenever I had time. Participated in both frontend and backend.
 
 Main 
 ![main](https://github.com/suyeounlee/Tutorium-Web-Group-Assignment2/assets/102848080/f1b7c40b-b750-49d2-8836-a62568605390)
