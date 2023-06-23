@@ -28,10 +28,7 @@ JavaScript functin4
 JavaScript function5
 ![js5](https://github.com/suyeounlee/Tutorium-Web-Group-Assignment2/assets/102848080/4c150944-4521-45f4-8c4c-a48d99cdf98d)
 
-Login 
-![login](https://github.com/suyeounlee/Tutorium-Web-Group-Assignment2/assets/102848080/83acf58c-c984-418c-834b-f8829bac7900)
-
-Login.php
+After Login
 ![after_login](https://github.com/suyeounlee/Tutorium-Web-Group-Assignment2/assets/102848080/a3789e4b-d452-42d6-b4c3-bb71583c4ab4)
 
 User information edit
